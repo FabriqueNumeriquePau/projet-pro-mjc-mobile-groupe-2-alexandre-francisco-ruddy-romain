@@ -1,63 +1,106 @@
-body {
-    background-image: url(../../images/img4.jpg); 
-    background-repeat: no-repeat; 
+/* Couleur de fond */
+
+.bgColorLightPink{
+    background-color: #D6859E;
 }
 
-body img:nth-child(2){
-    height : 100vh;
-    position: absolute;
+.bgColorDarkPink{
+    background-color: #C93364;
 }
-body img:nth-child(1){
-    text-align: center;
-    margin-top:25vh;
+.bgColorLightGreen{
+    background-color: #7DB7A3;
 }
-body section{
-    position: relative;
-    top:50vh;
+.bgColorDarkGreen{
+    background-color: #3C963E;
 }
-body section div:nth-child(1){
-    position: absolute;
-    opacity: 0.5;
-    background-color: #FF0000;
-    height:100%;
-    width:100%;
+.bgColorBrown{
+    background-color: #672C2A;
 }
-body section div:nth-child(2){
-    text-align: center;
+.bgColorYellow{
+    background-color: #DF8B19;
+}
+.bgColorBlue{
+    background-color: #3696A1;
+}
+
+/* Couleur de police */
+
+.colorPoliceBlack {    
+    color : black;
+}
+
+.colorPoliceWhite{
+    color : white;
+}
+
+.colorPolicePink {
+    color : #C93364;
+}
+
+@font-face{
     font-family: "MaPolice-black";
+    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-Black.ttf) format('truetype');
 }
-.colorWhite{
-    color:white;
+@font-face{
+    font-family: "MaPolice-italic";
+    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
 }
-.float a{
-    display: block;
-    background-color: rgb(216, 212, 212);
-    border-radius: 50% 0 0 50%;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 10px;
+
+.boxShadow {
+    box-shadow: 4px 4px 2px black ;
 }
-#container {
+
+body{
+    margin:0;
+    padding:0;
+}
+
+/* ---------------------------------------------------------
+--------------           ACCUEIL          ------------------
+----------------------------------------------------------*/
+
+img{
+    width: 100%;
+}
+
+aside a {
     position: fixed;
-    bottom: 30vh;
     right: 0; 
+    border-radius: 50% 0 0 50%;
+    width: 7vh;
+    height: 7vh;
 }
-.black {
+
+aside a img{
+    width: 50%;
+    display: block;
+    margin : auto;
+    margin-top: 25%;
+}
+
+aside a:nth-child(1){
+    bottom: 38vh;
+    background-color: rgb(255, 255, 255);
+}
+
+aside a:nth-child(2){
+    bottom: 30vh;
     background-color: black;
 }
+
+aside a:nth-child(3){
+    bottom: 22vh;
+    background-color: rgb(255, 255, 255);
+}
+
 footer{
-    background: #CCC;
     position :absolute;
     bottom: 0;
     width: 100%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100%;
+    grid-template-rows: 9vh;
     text-align: center;
-    font-size: 60%;
 }
 
 footer a:nth-child(1){
@@ -66,14 +109,15 @@ footer a:nth-child(1){
 
 footer a{
     font-family: "MaPolice-black";
-    border: 1px solid rgb(126, 107, 0);
-    color: black;
+    border: 1px solid rgb(255, 255, 255);
     text-decoration: none;
-    padding-top: 2.5em;
-    padding-bottom: 1em;
+    font-size: 60%;
 }
 
-.logo{
-    height: 10px;
-    width: 10px;
+footer a img{
+    width: 40%;
+    display: block;
+    margin : auto;
+    margin-top: 5%;
+    padding-bottom: 5%;
 }
