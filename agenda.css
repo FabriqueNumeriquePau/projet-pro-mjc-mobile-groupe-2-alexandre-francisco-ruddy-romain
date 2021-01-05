@@ -1,0 +1,23 @@
+@font-face{
+    font-family: "MaPolice-black";
+    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-Black.ttf) format('truetype');
+}
+@font-face{
+    font-family: "MaPolice-italic";
+    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
+}
+body{
+    width:360px;
+    margin:0;
+    padding:0;
+    background-image: url(../../images/img4.jpg); 
+    background-repeat: no-repeat;
+}
+body img:nth-child(2){
+    height : 100vh;
+    position: absolute;
+}
+body img:nth-child(1){
+    text-align: center;
+    margin-top:25vh;
+}
