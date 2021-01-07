@@ -12,18 +12,17 @@ h1{
     border-bottom: 1px solid #6B5555;
 }
 /*----------Cadre----------*/
-main{
+main, form{
     margin:8%;
     padding:5%;
     border-radius: 50px;
     background-color: #FFFFFF;
     height: 80vh;
-    overflow: scroll;
     display: flex;
     flex-direction: column;
 }
 /*__________________________________________________*/
-h4{
+h4, input{
     color: #C93364;
 }
 footer{
@@ -39,15 +38,15 @@ button{
     border:none;
     outline: none;
 }
-#mesDocuments{
-    background-color: #FFFFFF;
-}
-#supressionCompte{
-    background-color: #000000;
-    color:#FFFFFF;
-}
 #close{
     position: absolute;
     top:0;
     right: 0;
+}
+.whiteButton{
+    background-color: #FFFFFF;
+}
+.blackButton{
+    background-color: #000000;
+    color:#FFFFFF;
 }

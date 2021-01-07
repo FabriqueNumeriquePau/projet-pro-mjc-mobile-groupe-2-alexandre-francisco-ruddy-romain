@@ -1,4 +1,18 @@
-section{
-    border: 2px solid #C93364;
-    margin:10% 0 0 0;
+form{
+    justify-content: space-between;
 }
+input{
+    border: 2px solid #C93364;
+    flex:1;
+    margin: 10% 0 10% 0;
+    text-align: center;
+    font-weight: bold;
+}
+footer{
+    flex:1;
+}
+@media (max-height: 590px) {
+    main{
+      overflow: scroll;
+    }
+  }
