@@ -22,7 +22,7 @@ main, form{
     flex-direction: column;
 }
 /*__________________________________________________*/
-h4, input{
+h4, input, label{
     color: #C93364;
 }
 footer{

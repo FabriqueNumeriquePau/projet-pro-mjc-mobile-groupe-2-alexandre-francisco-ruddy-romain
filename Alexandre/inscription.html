@@ -13,16 +13,17 @@
 
 <body class="bgColorLightPink">
     <h1>Pré-Inscription</h1>
-    <form method="post" class="boxShadow">
-        <input type="name" value="Nom d'utilisateur" onclick="" />
-        <input type="" value="Adresse E-Mail" onclick="" />
-        <input type="" value="Mot de passe" onclick="" />
-        <input type="" value="Confirmer Mot de Passe" onclick="" />
+    <form method="post" action="traitement.php" class="boxShadow">
+        <input type="text" id="username" placeholder="Nom d'utilisateur" onclick="" />
+        <input type="email" id="email" placeholder="E-Mail" onclick="" />
+        <input type="text" id="password1" placeholder="Mot de passe" onclick="hidePassword1()" />
+        <input type="text" id="password2" placeholder="Confirmer Mot de Passe" onclick="hidePassword2()" />
         <footer>
-            <button class="boxShadow blackButton" >Supprimer Compte</button>
+            <button class="boxShadow blackButton">Supprimer Compte</button>
         </footer>
     </form>
     <i id="close" class="material-icons">close</i>
+    <script src="assets/js/inscription.js"></script>
 </body>
 
 </html>
