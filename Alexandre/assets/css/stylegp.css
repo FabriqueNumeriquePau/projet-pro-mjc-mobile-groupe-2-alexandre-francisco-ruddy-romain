@@ -1,6 +1,6 @@
 @font-face{
     font-family: "MaPolice-regular";
-    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.ttf) format('truetype');
+    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
 }
 body{
     text-align:center;
@@ -9,6 +9,7 @@ body{
 h1{
     display: inline-block;
     margin:auto;
+    margin-top:10%;
     border-bottom: 1px solid #6B5555;
 }
 /*----------Cadre----------*/
@@ -17,7 +18,7 @@ main, form{
     padding:5%;
     border-radius: 50px;
     background-color: #FFFFFF;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
 }
