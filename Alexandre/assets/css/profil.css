@@ -1,0 +1,27 @@
+main{
+    overflow: scroll;
+
+}
+/*----------image profil----------*/
+img{
+    width:15%;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+/*__________________________________________________*/
+/*----------component----------*/
+article{
+    display: flex;
+    justify-content: space-between;
+}
+/*__________________________________________________*/
+/*----------Ligne----------*/
+main>p{
+    margin-left:auto;
+    margin-right:auto;
+    padding:0;
+    width: 50%;
+    border: 1px solid rgba(141, 141, 141, 0.5);
+}
+/*__________________________________________________*/
