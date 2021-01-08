@@ -1,0 +1,329 @@
+/* ---------------------------------------------------------
+--------------           ACCUEIL          ------------------
+----------------------------------------------------------*/
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.backh {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/img4.jpg);
+    background-size: cover;
+}
+
+aside a {
+    position: fixed;
+    right: 0; 
+    border-radius: 50% 0 0 50%;
+    width: 7vh;
+    height: 7vh;
+}
+
+aside a img{
+    width: 50%;
+    display: block;
+    margin : auto;
+    margin-top: 25%;
+}
+
+aside a:nth-child(1){
+    bottom: 38vh;
+    background-color: rgb(255, 255, 255);
+}
+
+aside a:nth-child(2){
+    bottom: 30vh;
+    background-color: black;
+}
+
+aside a:nth-child(3){
+    bottom: 22vh;
+    background-color: rgb(255, 255, 255);
+}
+
+footer{
+    position :absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 9vh;
+    text-align: center;
+}
+
+footer a:nth-child(1){
+    grid-column: 1;
+}
+
+footer a{
+    font-family: "MaPolice-black";
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 60%;
+}
+
+footer a img{
+    width: 40%;
+    display: block;
+    margin : auto;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* ------------------CARRUSEL----------------------- */
+h2 {
+    padding: 10px;
+    padding-bottom: 2px;
+    text-align: center;
+    margin-top: 15px;
+}
+.h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+    
+
+.carrusel {
+    background-color: #7DB7A3;
+    display: flex;
+    width: 95%;
+    height: 210px;
+    margin-top: 10px;
+    margin: auto;
+
+}
+.foto {
+    width: 37%;
+    height: 190px;
+    background-image: url(/Francisco/infos/EVENEMENTSMOIS.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px;
+    margin: 10px;
+}
+.texto {
+    width: 60%;
+    height: 180px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.texto p {
+    padding-top: 5px;
+    margin-bottom: 25px;
+}
+
+#buscador {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    margin-top: 30px;
+}
+.categorias {
+    width: 32%;
+    height: 40px;
+    background-color: #DF8B19;
+    border-radius: 5px;
+    margin: auto;
+    border: 1px solid rgba(172, 169, 169, 0.705);
+    display: flex;
+}
+
+.categorias p {
+    top: 50%;
+    margin: auto;
+    color: rgba(114, 112, 112, 0.877);
+}
+.categorias a {
+    background-color: darkgreen;
+    width: 10%;
+    margin: auto;
+    color: rgba(114, 112, 112, 0.877);
+}
+.menu {
+    width: 100%;
+    height: 200px;
+    display: none;
+}
+.buscar {
+    width: 64%;
+    height: 40px;
+    background-color: #DF8B19;
+    border-radius: 5px;
+    margin: auto;
+    border: 1px solid rgba(172, 169, 169, 0.705);
+    display: flex;
+}
+.buscar p {
+    top: 50%;
+    margin: auto;
+    color: rgba(114, 112, 112, 0.877);
+}
+
+.tous {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.h3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor {
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cuadros {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fecha {
+    background-color: #DF8B19;
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid rgba(172, 169, 169, 0.705);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid rgba(172, 169, 169, 0.705);
+    margin-left: auto;
+    margin-right: auto;
+}
+.dia {
+    height: 20px;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+.mes {
+    height: 20px;
+    width: 50%;
+    text-align: center;
+}
+.ano {
+    height: 20px;
+    width: 50%;
+} 
+.comentario {
+    width: 45%;
+    height: 25px;
+    background-color:#DF8B19;
+    border-radius: 5px; 
+    border: 1px solid rgba(172, 169, 169, 0.705);
+    text-align: center;
+}
+.favorito {
+    width: 45%;
+    height: 25px;
+    background-color:#DF8B19;
+    border-radius: 5px;
+    border: 1px solid rgba(172, 169, 169, 0.705);
+    text-align: center;
+}
+
+.job {
+    width: 75%;
+    height: 80px;
+    background-image: url(/Francisco/infos/job.png);
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid rgba(169, 170, 172, 0.705);
+    margin-left: auto;
+    margin-right: auto;
+}
+.parents {
+    width: 75%;
+    height: 80px;
+    background-image: url(/Francisco/infos/padres.png);
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid rgba(169, 170, 172, 0.705);
+    margin-left: auto;
+    margin-right: auto;
+}
+.sport {
+    width: 75%;
+    height: 80px;
+    background-image: url(/Francisco/infos/sport.png);
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid rgba(169, 170, 172, 0.705);
+    margin-left: auto;
+    margin-right: auto;
+}
+.informacion {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+}
+
+.informacion p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.links {
+    padding-bottom: 10px;
+    margin-left: 85%;
+}
+.lineas {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.boton {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.boton a {
+    width: 200px;
+    height: 40px;
+    background-color: #D6859E;
+    border: 1px solid rgba(224, 89, 179, 0.705);
+    border-radius: 5px;
+    margin: auto;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    background-color: #DF8B19;
+    align-items: center;
+    display: flex;
+}
+.footer p{
+    color: blanchedalmond;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+}
+
+.boton a:hover {
+    background-color: rgba(167, 161, 161, 0.753);
+}
