@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.exit {
+    width: 100%;
+    height: 20px;
+    display: flex;
+}
+.exit a {
+    width: 5%;
+    height: 20px;
+    margin-left: 95%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.exit a:hover {
+    background-color: #D6859E;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #3696A1;
+}
+.header h1 {
+    font-size: 22px;
+    text-align: center;
+}
+.noticia {
+    width: 96%;
+    padding: 10px;
+    display: flex;
+}
+.imagenjob {
+    width: 46%;
+    height: 250px;
+    background-image: url(/Francisco/infos/image005.png);
+    background-size: cover;
+    margin: auto;
+    border: 1px solid rgba(183, 86, 192, 0.705);
+}
+.textojob {
+    width: 50%;
+    margin: auto;
+    font-weight: normal;
+}
+.textojob p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.prerequis {
+    width: 95%;
+    height: 250px;
+    background-color: #3696A1;
+    display: grid;
+    margin: auto;
+}
+.prerequis p {
+    text-align: justify;
+    padding: 10px;
+}
+.prerequis ul {
+    text-align: justify;
+    padding: 10px;
+    margin-left: 12px;
+    line-height: 21px;
+}
+.fecha {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+}
+.lines {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fecha p {
+    padding: 3px;
+    font-size: 13px;
+    width: 95%;
+    text-align: center;
+    margin: auto;
+}
+
+.sociales {
+    width: 95%;
+    height: 120px;
+    background-color: #DF8B19;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sociales p {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+.iconos {
+    background-color: gray;
+    width: 10%;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 25px;
+    text-align: left;
+    margin-left: 10px;
+}
+.categorias {
+    width: 95%;
+    height: 150px;
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+}
+.elemento1 {
+    width: 50%;
+    padding: 3px;
+    height: 150px;
+}
+.img1 {
+    height: 50%;
+    width: 100%;
+    background-image: url(/Francisco/infos/padres.png);
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid rgba(183, 86, 192, 0.705);
+    margin: auto;
+}
+.text1 {
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    font-size: 14px;
+    text-align: justify;
+}
+.text1 p {
+    padding: 5px;
+}
+.elemento2 {
+    width: 50%;
+    height: 150px;
+    padding: 3px;
+}
+.img2 {
+    height: 50%;
+    width: 100%;
+    background-image: url(/Francisco/infos/sport.png);
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid rgba(86, 192, 118, 0.705);
+    margin: auto;
+}
+.text2 {
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    font-size: 14px;
+    text-align: justify;
+}
+.text2 p {
+    padding: 5px;
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    background-color: #DF8B19;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+.footer p{
+    color: blanchedalmond;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+}
