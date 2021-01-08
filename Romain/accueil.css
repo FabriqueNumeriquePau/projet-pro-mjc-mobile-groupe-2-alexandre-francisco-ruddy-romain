@@ -1,71 +1,13 @@
-/* Couleur de fond */
-
-.bgColorLightPink{
-    background-color: #D6859E;
-}
-
-.bgColorDarkPink{
-    background-color: #C93364;
-}
-.bgColorLightGreen{
-    background-color: #7DB7A3;
-}
-.bgColorDarkGreen{
-    background-color: #3C963E;
-}
-.bgColorBrown{
-    background-color: #672C2A;
-}
-.bgColorYellow{
-    background-color: #DF8B19;
-}
-.bgColorBlue{
-    background-color: #3696A1;
-}
-
-/* Couleur de police */
-
-.colorPoliceBlack {    
-    color : black;
-}
-
-.colorPoliceWhite{
-    color : white;
-}
-
-.colorPolicePink {
-    color : #C93364;
-}
-
-.colorPoliceLightPink {
-    color : #D6859E;
-}
-
-@font-face{
-    font-family: "MaPolice-black";
-    src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Light.ttf) format('truetype');
-}
-@font-face{
-    font-family: "MaPolice-italic";
-    src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
-}
-
-.boxShadow {
-    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25) ;
-}
-
-body{
-    font-family: "MaPolice-black";
-}
-
-*{
-    margin: 0;
-    padding: 0;
-}
 
 /* ---------------------------------------------------------
 --------------           HEADER           ------------------
 ----------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "MaPolice-regular";
+}
 
 header{
     background-image: url(/images/Accueil1.png);
@@ -75,6 +17,10 @@ header{
     display: grid;
     grid-template-columns: 45vw 10vw 45vw;
 }
+
+/*------------------------------ 
+----------- ASIDE --------------
+----------------------------- */
 
 aside a {
     position: fixed;
@@ -111,6 +57,10 @@ aside a:nth-child(3){
     margin-top: 1.7vh;
 }
 
+/*------------------------------ 
+---------- SCROLL --------------
+----------------------------- */
+
 .scroll{
     grid-area: 1 / 2 / 2 / 3;
     margin-left: auto;
@@ -132,6 +82,10 @@ aside a:nth-child(3){
     animation: bounce 0.8s ease infinite;
 }
 
+/*------------------------------ 
+---------- FOOTER --------------
+----------------------------- */
+
 .footer_accueil{
     position :absolute;
     bottom: 0;
@@ -147,7 +101,6 @@ aside a:nth-child(3){
 }
 
 .footer_accueil a{
-    font-family: "MaPolice-black";
     border: 1px solid rgb(255, 255, 255);
     text-decoration: none;
     font-size: 3vw;
@@ -166,3 +119,14 @@ aside a:nth-child(3){
     background-color: white;
     color: #D6859E;
 }
+
+/* ---------------------------------------------------------
+--------------           KEY FRAMES          ---------------
+----------------------------------------------------------*/
+
+@keyframes bounce{
+    from {transform: translateY(0);}
+     to  {transform: translateY(-2vh);}
+}
+
+

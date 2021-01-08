@@ -37,6 +37,10 @@
     color : #C93364;
 }
 
+.colorPoliceLightPink {
+    color : #D6859E;
+}
+
 @font-face{
     font-family: "MaPolice-black";
     src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-Black.ttf) format('truetype');
@@ -44,6 +48,11 @@
 @font-face{
     font-family: "MaPolice-italic";
     src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
+}
+
+@font-face{
+    font-family: "MaPolice-regular";
+    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
 }
 
 body{
