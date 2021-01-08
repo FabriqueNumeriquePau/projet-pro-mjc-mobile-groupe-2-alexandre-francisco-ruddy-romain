@@ -37,13 +37,17 @@
     color : #C93364;
 }
 
+.colorPoliceLightPink {
+    color : #D6859E;
+}
+
 @font-face{
     font-family: "MaPolice-black";
-    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-Black.ttf) format('truetype');
+    src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Light.ttf) format('truetype');
 }
 @font-face{
     font-family: "MaPolice-italic";
-    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
+    src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
 }
 
 .boxShadow {
@@ -51,16 +55,25 @@
 }
 
 body{
-    margin:0;
-    padding:0;
+    font-family: "MaPolice-black";
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 /* ---------------------------------------------------------
---------------           ACCUEIL          ------------------
+--------------           HEADER           ------------------
 ----------------------------------------------------------*/
 
-img{
-    width: 100%;
+header{
+    background-image: url(/images/Accueil1.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 45vw 10vw 45vw;
 }
 
 aside a {
@@ -69,13 +82,8 @@ aside a {
     border-radius: 50% 0 0 50%;
     width: 7vh;
     height: 7vh;
-}
-
-aside a img{
-    width: 50%;
-    display: block;
-    margin : auto;
-    margin-top: 25%;
+    z-index: 1;
+    text-decoration: none;
 }
 
 aside a:nth-child(1){
@@ -93,7 +101,38 @@ aside a:nth-child(3){
     background-color: rgb(255, 255, 255);
 }
 
-footer{
+.material-icons.md-30 { 
+    display: block;
+    font-size: 4vh; 
+}
+
+.icon1{
+    margin-left: 1.7vh;
+    margin-top: 1.7vh;
+}
+
+.scroll{
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75vh;
+    border: solid 2px rgb(255, 255, 255);
+    height: 8vh;
+    width: 3.5vh;
+    border-radius: 50px;
+}
+
+.scroll_child{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    animation: bounce 0.8s ease infinite;
+}
+
+.footer_accueil{
     position :absolute;
     bottom: 0;
     width: 100%;
@@ -103,24 +142,27 @@ footer{
     text-align: center;
 }
 
-footer a:nth-child(1){
+.footer_accueil a:nth-child(1){
     grid-column: 1;
 }
 
-footer a{
+.footer_accueil a{
     font-family: "MaPolice-black";
     border: 1px solid rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 60%;
+    font-size: 3vw;
 }
 
-footer a img{
-    width: 40%;
+.material-icons.md-34 { 
     display: block;
-    margin : auto;
-    margin-top: 5%;
-    padding-bottom: 5%;
+    font-size: 5vh; 
 }
 
+.icon2{
+    margin: 0.5vh auto;
+}
 
-  
+.selection{
+    background-color: white;
+    color: #D6859E;
+}
