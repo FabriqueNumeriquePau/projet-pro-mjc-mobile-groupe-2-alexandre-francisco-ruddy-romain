@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
+
 <body class="bgColorLightPink">
     <h1>Profil</h1>
     <main class="boxShadow">
@@ -18,8 +19,14 @@
         <section>
             <h4>Prénom</h4>
             <article>
-                <p>lePrenom</p>
-                <i class="material-icons">edit</i>
+                <p id="prenom">lePrenom</p>
+                <!-- <i class="material-icons" onclick="editModePrenom()">edit</i> -->
+                <i class="material-icons" onclick="okClose(0)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okClose(0, 'prenom')"></input>
+                    <!-- <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okClosePrenom()"></input> -->
+                </div>
             </article>
         </section>
         <!--Fin du component-->
@@ -27,56 +34,84 @@
         <section>
             <h4>Nom</h4>
             <article>
-                <p>leNom</p>
-                <i class="material-icons">edit</i>
+                <p id="nom">leNom</p>
+                <i class="material-icons" onclick="okClose(1)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okClose(1, 'nom')"></input>
+                </div>
             </article>
         </section>
         <p></p>
         <section>
             <h4>Date de Naissance</h4>
             <article>
-                <p>laDate</p>
-                <i class="material-icons">edit</i>
+                <p id="date">laDate</p>
+                <i class="material-icons" onclick="okClose(2)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okClose(2, 'date')"></input>
+                </div>
             </article>
         </section>
         <p></p>
         <section>
             <h4>Adresse</h4>
             <article>
-                <p>ladresse</p>
-                <i class="material-icons">edit</i>
+                <p id="adresse">ladresse</p>
+                <i class="material-icons" onclick="editModeAdresse()">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseAdresse()"></input>
+                </div>
             </article>
         </section>
         <p></p>
         <section>
             <h4>Numéro</h4>
             <article>
-                <p>leNumero</p>
-                <i class="material-icons">edit</i>
+                <p id="numero">leNumero</p>
+                <i class="material-icons" onclick="editModeNumero()">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseNumero()"></input>
+                </div>
             </article>
         </section>
         <p></p>
         <section>
             <h4>E-Mail</h4>
             <article>
-                <p>leMail</p>
-                <i class="material-icons">edit</i>
+                <p id="email">leMail</p>
+                <i class="material-icons" onclick="editModeEmail()">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseEmail()"></input>
+                </div>
             </article>
         </section>
         <p></p>
         <section>
             <h4>Activités</h4>
             <article>
-                <p>lesActivites</p>
-                <i class="material-icons">edit</i>
+                <p id="activites">lesActivites</p>
+                <i class="material-icons" onclick="editModeActivites()">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseActivites()"></input>
+                </div>
             </article>
         </section>
         <p></p>
         <section>
             <h4>Professions</h4>
             <article>
-                <p>leMetier</p>
-                <i class="material-icons">edit</i>
+                <p id="metier">leMetier</p>
+                <i class="material-icons" onclick="editModeMetier()">edit</i>
+                <div class="bgColorLightPink edit">
+                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseMetier()"></input>
+                </div>
             </article>
         </section>
         <p></p>
@@ -85,6 +120,7 @@
             <button class="boxShadow blackButton">Supprimer Compte</button>
         </footer>
         <i id="close" class="material-icons">close</i>
+        <script src="assets/js/profil.js"></script>
     </main>
 </body>
 
