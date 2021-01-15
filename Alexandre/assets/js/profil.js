@@ -1,135 +1,4 @@
-// let allDivEdit = document.getElementsByTagName("div");
-// let textEdit = document.getElementsByClassName("textEdit");
-
-// /* prenom */
-// let prenom = document.getElementById("prenom");
-
-// // let divEditPrenom = allDivEdit[0];
-
-// // let textEditPrenom = textEdit[0];
-
-// // function editModePrenom() {
-// //     divEditPrenom.style.display = "flex";
-// // }
-
-// // function okClosePrenom() {
-// //     prenom.textContent = textEditPrenom.value;
-// //     divEditPrenom.style.display = "none";
-// // }
-
-// /* nom */
-// let nom = document.getElementById("nom");
-
-// // let divEditNom = allDivEdit[1];
-
-// // let textEditNom = textEdit[1];
-
-// // function editModeNom() {
-// //     divEditNom.style.display = "flex";
-// // }
-
-// // function okCloseNom() {
-// //     nom.textContent = textEditNom.value;
-// //     divEditNom.style.display = "none";
-// // }
-
-// /* date */
-// let date = document.getElementById("date");
-
-// // let divEditDate = allDivEdit[2];
-
-// // let textEditDate = textEdit[2];
-
-// // function editModeDate() {
-// //     divEditDate.style.display = "flex";
-// // }
-
-// // function okCloseDate() {
-// //     date.textContent = textEditDate.value;
-// //     divEditDate.style.display = "none";
-// // }
-
-// /* adresse */
-// let adresse = document.getElementById("adresse");
-
-// // let divEditAdresse = allDivEdit[3];
-
-// // let textEditAdresse = textEdit[3];
-
-// // function editModeAdresse() {
-// //     divEditAdresse.style.display = "flex";
-// // }
-
-// // function okCloseAdresse() {
-// //     adresse.textContent = textEditAdresse.value;
-// //     divEditAdresse.style.display = "none";
-// // }
-
-// /* numero */
-// let numero = document.getElementById("numero");
-
-// // let divEditNumero = allDivEdit[4];
-
-// // let textEditNumero = textEdit[4];
-
-// // function editModeNumero() {
-// //     divEditNumero.style.display = "flex";
-// // }
-
-// // function okCloseNumero() {
-// //     numero.textContent = textEditNumero.value;
-// //     divEditNumero.style.display = "none";
-// // }
-
-// /* email */
-// let email = document.getElementById("email");
-
-// // let divEditEmail = allDivEdit[5];
-
-// // let textEditEmail = textEdit[5];
-
-// // function editModeEmail() {
-// //     divEditEmail.style.display = "flex";
-// // }
-
-// // function okCloseEmail() {
-// //     email.textContent = textEditEmail.value;
-// //     divEditEmail.style.display = "none";
-// // }
-
-// /* activites */
-// let activites = document.getElementById("activites");
-
-// // let divEditActivites = allDivEdit[6];
-
-// // let textEditActivites = textEdit[6];
-
-// // function editModeActivites() {
-// //     divEditActivites.style.display = "flex";
-// // }
-
-// // function okCloseActivites() {
-// //     activites.textContent = textEditActivites.value;
-// //     divEditActivites.style.display = "none";
-// // }
-
-// /* metier */
-// let metier = document.getElementById("metier");
-
-// // let divEditMetier = allDivEdit[7];
-
-// // let textEditMetier = textEdit[7];
-
-// // function editModeMetier() {
-// //     divEditMetier.style.display = "flex";
-// // }
-
-// // function okCloseMetier() {
-// //     metier.textContent = textEditMetier.value;
-// //     divEditMetier.style.display = "none";
-// // }
-
-function okClose(n, t) {
+function editOpenClose(n, t) {
     // Je récupère un élément HTML dans la liste initiale
     let el = document.getElementsByTagName("div")[n];
     // Afficher les résultats dans la console
@@ -141,7 +10,13 @@ function okClose(n, t) {
             let tmp = document.getElementById(t);
             console.log(tmp);
             // Changement de la valeur du dit texte
-            tmp.textContent = document.getElementsByClassName("textEdit")[n].value;
+            // Si valeur il y a
+            if (document.getElementsByClassName("editContent")[n].value == "") {
+                tmp.textContent = document.getElementById(t).textContent;
+                // Si valeur null
+            } else {
+                tmp.textContent = document.getElementsByClassName("editContent")[n].value;
+            }
         }
         el.style.display = 'none';
     } else {
@@ -149,10 +24,52 @@ function okClose(n, t) {
     }
 }
 
-/* okClose(el){} 
-okClose(document.getElementByTagName()[0]) 
-okClose(el){ el.style.display = 'flex'; } 
-let allDivEdit = document.getElementsByTagName("div"); 
-let divEditPrenom = allDivEdit[0]; 
-okClose(document.getElementsByTagName("div")[0]) 
-okClose(allDivEdit[0])  */
+
+function newActi() {
+    /* statut de onclick */
+    let setOnclick = 8;
+    let onclickStatut = ("editOpenClose(" + setOnclick)
+    /* section */
+    let detectSection = document.getElementById("addActi");
+
+    /* article */
+    let createArticle = document.createElement("article");
+
+    /* p */
+    let createP = document.createElement("p");
+    createP.id = "activites";
+
+    /* i */
+    let createI = document.createElement("i");
+    createI.classList = "material-icons";
+    createI.setAttribute("onclick", onclickStatut + ")");
+
+    /* div */
+    let createDiv = document.createElement("div");
+    createDiv.classList = "bgColorLightPink edit";
+
+    /* input left */
+    let createInputLeft = document.createElement("input");
+    Object.assign(createInputLeft, {
+        type: "text",
+        classList: "bgColorLightPink textEdit editContent",
+        placeholder: "Entrez info",
+    })
+
+    /* input right */
+    let createInputRight = document.createElement("input");
+    Object.assign(createInputRight, {
+        type: "button",
+        classList: "bgColorLightPink textEdit",
+        placeholder: "OK ",
+        onclick: onclickStatut
+    })
+
+    console.log(detectSection);
+    console.log(createArticle);
+    console.log(createP);
+    console.log(createI);
+    console.log(createDiv);
+    console.log(createInputLeft);
+    console.log(createInputRight);
+}

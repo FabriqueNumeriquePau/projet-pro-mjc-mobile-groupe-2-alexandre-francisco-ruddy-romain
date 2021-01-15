@@ -21,10 +21,11 @@
             <article>
                 <p id="prenom">lePrenom</p>
                 <!-- <i class="material-icons" onclick="editModePrenom()">edit</i> -->
-                <i class="material-icons" onclick="okClose(0)">edit</i>
+                <i class="material-icons" onclick="editOpenClose(0)">edit</i>
                 <div class="bgColorLightPink edit">
-                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
-                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okClose(0, 'prenom')"></input>
+                    <input type="text" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(0, 'prenom')"></input>
                     <!-- <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okClosePrenom()"></input> -->
                 </div>
             </article>
@@ -35,10 +36,11 @@
             <h4>Nom</h4>
             <article>
                 <p id="nom">leNom</p>
-                <i class="material-icons" onclick="okClose(1)">edit</i>
+                <i class="material-icons" onclick="editOpenClose(1)">edit</i>
                 <div class="bgColorLightPink edit">
-                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
-                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okClose(1, 'nom')"></input>
+                    <input type="text" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(1, 'nom')"></input>
                 </div>
             </article>
         </section>
@@ -47,10 +49,11 @@
             <h4>Date de Naissance</h4>
             <article>
                 <p id="date">laDate</p>
-                <i class="material-icons" onclick="okClose(2)">edit</i>
+                <i class="material-icons" onclick="editOpenClose(2)">edit</i>
                 <div class="bgColorLightPink edit">
-                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
-                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okClose(2, 'date')"></input>
+                    <input type="date" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(2, 'date')"></input>
                 </div>
             </article>
         </section>
@@ -59,10 +62,11 @@
             <h4>Adresse</h4>
             <article>
                 <p id="adresse">ladresse</p>
-                <i class="material-icons" onclick="editModeAdresse()">edit</i>
+                <i class="material-icons" onclick="editOpenClose(3)">edit</i>
                 <div class="bgColorLightPink edit">
-                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
-                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseAdresse()"></input>
+                    <input type="text" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(3, 'adresse')"></input>
                 </div>
             </article>
         </section>
@@ -71,10 +75,11 @@
             <h4>Numéro</h4>
             <article>
                 <p id="numero">leNumero</p>
-                <i class="material-icons" onclick="editModeNumero()">edit</i>
+                <i class="material-icons" onclick="editOpenClose(4)">edit</i>
                 <div class="bgColorLightPink edit">
-                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
-                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseNumero()"></input>
+                    <input type="tel" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(4, 'numero')"></input>
                 </div>
             </article>
         </section>
@@ -83,22 +88,11 @@
             <h4>E-Mail</h4>
             <article>
                 <p id="email">leMail</p>
-                <i class="material-icons" onclick="editModeEmail()">edit</i>
+                <i class="material-icons" onclick="editOpenClose(5)">edit</i>
                 <div class="bgColorLightPink edit">
-                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
-                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseEmail()"></input>
-                </div>
-            </article>
-        </section>
-        <p></p>
-        <section>
-            <h4>Activités</h4>
-            <article>
-                <p id="activites">lesActivites</p>
-                <i class="material-icons" onclick="editModeActivites()">edit</i>
-                <div class="bgColorLightPink edit">
-                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
-                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseActivites()"></input>
+                    <input type="email" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                        onclick="editOpenClose(5, 'email')"></input>
                 </div>
             </article>
         </section>
@@ -107,12 +101,39 @@
             <h4>Professions</h4>
             <article>
                 <p id="metier">leMetier</p>
-                <i class="material-icons" onclick="editModeMetier()">edit</i>
+                <i class="material-icons" onclick="editOpenClose(6)">edit</i>
                 <div class="bgColorLightPink edit">
-                    <input type="text" class="bgColorLightPink  textEdit" placeholder="Entrez info"></input>
-                    <input type="button" class="bgColorLightPink  okEditButton" value="OK" onclick="okCloseMetier()"></input>
+                    <input type="text" class="bgColorLightPink  textEdit editContent" placeholder="Entrez info"></input>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                    onclick="editOpenClose(6, 'metier')"></input>
                 </div>
             </article>
+        </section>
+        <p></p>
+        <section id="addActi">
+            <h4>Activités</h4>
+            <article>
+                <p id="activites">lesActivites</p>
+                <i class="material-icons" onclick="editOpenClose(7)">edit</i>
+                <div class="bgColorLightPink edit">
+                    <select name="menuActi" id="dataListActi" class="bgColorLightPink  textEdit editContent">
+                        <option value="select">Select</option>
+                        <optgroup label="Bien Etre">
+                            <option value="Yoga">Yoga</option>
+                            <option value="Naturopathie">Naturopathie</option>
+                        </optgroup>
+                        <optgroup label="Dance">
+                            <option value="Hip-Hop">Hip-Hop</option>
+                            <option value="Breakdance">Breakdance</option>
+                        </optgroup>
+                    </select>
+                    <input type="button" class="bgColorLightPink  okEditButton" value="OK"
+                    onclick="editOpenClose(7, 'activites')"></input>
+                </div>
+            </article>
+            <div class="add">
+                <i class="material-icons" onclick="newActi()">add</i>
+            </div>
         </section>
         <p></p>
         <footer>

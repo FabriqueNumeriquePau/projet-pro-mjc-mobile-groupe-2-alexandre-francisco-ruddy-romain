@@ -18,7 +18,7 @@ main, form{
     padding-top: 5%;
     border-radius: 50px;
     background-color: #FFFFFF;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
 }

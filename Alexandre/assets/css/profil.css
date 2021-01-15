@@ -59,3 +59,7 @@ article>i{
 ::placeholder{
     color:black;
 }
+
+.add{
+    display: block;
+}
