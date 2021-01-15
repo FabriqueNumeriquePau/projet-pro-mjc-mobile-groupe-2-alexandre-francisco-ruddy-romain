@@ -5,28 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="agenda.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Agenda</title>
 </head>
 
 <body>
   <header>
-    <img src="placeholder.jpg" alt="placeholder">
     <aside>
-      <a href="#"><img class="img1" src="/images/Logo/telephone.svg" alt="Logo téléphone"></a>
-      <a href="#"><img src="/images/Logo/email.svg" alt="Logo email"></a>
-      <a href="#"><img src="/images/Logo/info.svg" alt="Logo Informations"></a>
+      <a class="colorPoliceBlack" href="#"><i class="material-icons md-30 icon1">local_phone</i></a>
+      <a class="colorPoliceWhite" href="#"><i class="material-icons md-30 icon1">local_post_office</i></a>
+      <a class="colorPoliceLightPink" href="#"><i class="material-icons md-30 icon1">info</i></a>
     </aside>
-    <nav class="bgColorLightPink">
-      <a class="colorPoliceWhite" href="#"><img src="/images/Logo/cup.svg" alt="Logo coupe"> ÉVÈNEMENTS</a>
-      <a class="colorPoliceWhite" href="#"><img src="/images/Logo/activites.svg" alt="Logo activités">ACTIVITÉS</a>
-      <a class="colorPoliceWhite" href="#"><img src="/images/Logo/agenda.svg" alt="Logo agenda">AGENDA</a>
-      <a class="colorPoliceWhite" href="#"><img src="/images/Logo/profil.svg" alt="Logo profil">PROFIL</a>
-    </nav>
+    <div class="scroll">
+          <a href="#marque"><img class="scroll_child" src="../images/Logo/finger_white.svg" alt="logo doigt"></a>
+      </div>
+    <footer class="bgColorLightPink footer_accueil">
+      <!-- Ajouter la class selection en fonction de la page selectionnée-->
+      <a class="colorPoliceWhite" href="#evenement.html"><i class="material-icons md-34 icon2">emoji_events</i>ÉVÈNEMENTS</a>
+      <a class="colorPoliceWhite" href="activités.html"><i class="material-icons md-34 icon2">rowing</i>ACTIVITÉS</a>
+      <a class="selection" href="#agenda.html"><i class="material-icons md-34 icon2">event</i>AGENDA</a>
+      <a class="colorPoliceWhite" href="#profil.html"><i class="material-icons md-34 icon2">person</i>PROFIL</a>
+    </footer>
   </header>
   <div id="calendar" class="calendar">
   </div>
-  <div class="event">
-    <h2>Mon Agenda</h2>
+  <div id="monagenda">
+    <h1>Mon Agenda</h1>
+    <div class="cours"></div>
+    <div class="cours"></div>
+    <div class="cours"></div>
   </div>
   <script src="agenda.js"></script>
 </body>

@@ -1,15 +1,31 @@
-var calendarNode = document.querySelector("#calendar");
+/* Progression actuel : 
+- Fonction permettant de crée un div où apparaitra les activés au quel l'adhérent est inscrit
+- Syntaxe ou fonciton nécessaire pour le changement d'année n'affichant plus "undefined"
+- Commentaire sur le fonctionnement du calendrier
+*/
 
-var currDate = new Date();
-var currYear = currDate.getFullYear();
-var currMonth = currDate.getMonth() + 1;
+/* création variable lier à l'ID calendar */
+let calendarNode = document.querySelector("#calendar");
 
-var selectedYear = currYear;
-var selectedMonth = currMonth;
-var selectedMonthName = getMonthName(selectedYear, selectedMonth);
-var selectedMonthDays = getDayCount(selectedYear, selectedMonth);
+/* création variable date, mois et année en cours */
+
+let currDate = new Date();
+let currYear = currDate.getFullYear();
+let currMonth = currDate.getMonth() + 1;
+
+/* création des variables pour les mois et jours */
+
+let selectedYear = currYear;
+let selectedMonth = currMonth;
+let selectedMonthName = getMonthName(selectedYear, selectedMonth);
+let selectedMonthDays = getDayCount(selectedYear, selectedMonth);
+
+/* en déclanrant deux nouvelles variables égales aux deux premieres
+ qui servirons pour les deux fonctions qui m'aiderons à afficher les mois suivants*/
 
 renderDOM(selectedYear, selectedMonth);
+
+/*  */
 
 function getMonthName (year, month) {
     let selectedDate = new Date(year, month-1, 1);
@@ -20,7 +36,11 @@ function getMonthText () {
     if (selectedYear === currYear)
         return selectedMonthName;
     else
-        return selectedMonthName + ", " + selectedYear;
+        return selectedMonthName + " ";
+}
+function getYearText () {
+//    if (selectedYear === currYear) //
+        return " " + selectedYear;
 }
 
 function getDayName (year, month, day) {
@@ -72,7 +92,7 @@ function renderDOM (year, month) {
   newCalendarNode.className = "calendar";
   
   let dateText = document.createElement("div");
-  dateText.append(getMonthText());
+  dateText.append(getMonthText(), getYearText());
   dateText.className = "date-text";
   newCalendarNode.append(dateText);
   
@@ -88,7 +108,7 @@ function renderDOM (year, month) {
   rightArrow.addEventListener("click", goToNextMonth);
   newCalendarNode.append(rightArrow);
   
-  let dayNames = ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"];
+  let dayNames = ["LUN", "MAR", "MER", "JEU", "VEN", "SAM", "DIM"];
   
   dayNames.forEach((cellText) => {
     let cellNode = document.createElement("div");
@@ -117,15 +137,17 @@ function goToPrevMonth () {
     }
     selectedMonthDays = getDayCount(selectedYear, selectedMonth);
     selectedMonthName = getMonthName(selectedYear, selectedMonth);
-  
+  /* checker état de la variable avec console.log */
+
     renderDOM(selectedYear, selectedMonth);
 }
 
 function goToNextMonth () {
     selectedMonth++;
     if (selectedMonth === 13) {
-        selectedMonth = 0;
+        selectedMonth = 1;
         selectedYear++;
+    
     }
     selectedMonthDays = getDayCount(selectedYear, selectedMonth);
     selectedMonthName = getMonthName(selectedYear, selectedMonth);
@@ -142,3 +164,8 @@ function goToCurrDate () {
   
     renderDOM(selectedYear, selectedMonth);
 }
+/*
+let cours = document.createElement("div");
+cours.className = "cours";
+document.querySelector("#monagenda").appendChild(cours);
+*/
