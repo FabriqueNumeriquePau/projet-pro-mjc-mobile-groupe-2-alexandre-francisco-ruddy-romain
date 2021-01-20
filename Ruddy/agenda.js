@@ -4,7 +4,11 @@
 - Commentaire sur le fonctionnement du calendrier
 */
 
-/* création variable lier à l'ID calendar */
+/* ---------------------------------------------------------
+--------------           CALENDRIER           --------------
+----------------------------------------------------------*/
+
+/* création variable lier et ciblage de l'ID calendar */
 let calendarNode = document.querySelector("#calendar");
 
 /* création variable date, mois et année en cours */
@@ -25,8 +29,6 @@ let selectedMonthDays = getDayCount(selectedYear, selectedMonth);
 
 renderDOM(selectedYear, selectedMonth);
 
-/*  */
-
 function getMonthName (year, month) {
     let selectedDate = new Date(year, month-1, 1);
     return selectedDate.toLocaleString('default', { month: 'long' });
@@ -39,7 +41,6 @@ function getMonthText () {
         return selectedMonthName + " ";
 }
 function getYearText () {
-//    if (selectedYear === currYear) //
         return " " + selectedYear;
 }
 
@@ -112,7 +113,7 @@ function renderDOM (year, month) {
   
   dayNames.forEach((cellText) => {
     let cellNode = document.createElement("div");
-    cellNode.className = "cell cell--unselectable";
+    cellNode.className = "jours";
     cellNode.append(cellText);
     newCalendarNode.append(cellNode);
   });
@@ -137,8 +138,7 @@ function goToPrevMonth () {
     }
     selectedMonthDays = getDayCount(selectedYear, selectedMonth);
     selectedMonthName = getMonthName(selectedYear, selectedMonth);
-  /* checker état de la variable avec console.log */
-
+ 
     renderDOM(selectedYear, selectedMonth);
 }
 
@@ -154,18 +154,26 @@ function goToNextMonth () {
   
     renderDOM(selectedYear, selectedMonth);
 }
+/* ---------------------------------------------------------
+--------------           AGENDA         --------------------
+----------------------------------------------------------*/
 
-function goToCurrDate () {
-    selectedYear = currYear;
-    selectedMonth = currMonth;
-
-    selectedMonthDays = getDayCount(selectedYear, selectedMonth);
-    selectedMonthName = getMonthName(selectedYear, selectedMonth);
-  
-    renderDOM(selectedYear, selectedMonth);
-}
-/*
 let cours = document.createElement("div");
 cours.className = "cours";
 document.querySelector("#monagenda").appendChild(cours);
-*/
+
+let matiere = document.createElement("h2");
+let journee = document.createElement("p");
+let horaire = document.createElement("div")
+horaire.className="horaire";
+
+/* icone horloge a rajouter */
+
+matiere.textContent = "YOGA"; /* intitulé du cours ex: Yoga */
+journee.textContent = "Lorem Ipsum"; /* date du cours */
+horaire.textContent = "00H00"; /* heure du cours en lien avec la db */
+
+cours.appendChild(matiere);
+cours.appendChild(journee);
+cours.appendChild(horaire);
+
