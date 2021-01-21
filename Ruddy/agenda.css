@@ -1,85 +1,33 @@
-/* Couleur de fond */
-
-.bgColorLightPink {
-  background-color: #D6859E;
-}
-
-.bgColorDarkPink {
-  background-color: #C93364;
-}
-
-.bgColorLightGreen {
-  background-color: #7DB7A3;
-}
-
-.bgColorDarkGreen {
-  background-color: #3C963E;
-}
-
-.bgColorBrown {
-  background-color: #672C2A;
-}
-
-.bgColorYellow {
-  background-color: #DF8B19;
-}
-
-.bgColorBlue {
-  background-color: #3696A1;
-}
-
-/* Couleur de police */
-
-.colorPoliceBlack {
-  color: black;
-}
-
-.colorPoliceWhite {
-  color: white;
-}
-
-.colorPolicePink {
-  color: #C93364;
-}
-
-.colorPoliceLightPink {
-  color: #D6859E;
-}
-
-@font-face {
-  font-family: "MaPolice-italic";
-  src: url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
-}
-
-.boxShadow {
-  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
-}
-
-body {
-  font-family: "MaPolice-black";
-
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
 
 /* ---------------------------------------------------------
 --------------           HEADER           ------------------
 ----------------------------------------------------------*/
 
-header {
-  background-image: url(../images/Accueil1.png);
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "MaPolice-regular";
+}
+
+header{
+  background-image: url(/images/Accueil1.png);
   background-size: cover;
   height: 100vh;
   display: grid;
   grid-template-columns: 45vw 10vw 45vw;
 }
 
+/*------------------------------ 
+----------- ASIDE --------------
+----------------------------- */
+
+/* aside{
+  display: none;
+} */
+
 aside a {
   position: fixed;
-  right: 0;
+  right: 0; 
   border-radius: 50% 0 0 50%;
   width: 7vh;
   height: 7vh;
@@ -87,32 +35,36 @@ aside a {
   text-decoration: none;
 }
 
-aside a:nth-child(1) {
+aside a:nth-child(1){
   bottom: 38vh;
   background-color: rgb(255, 255, 255);
 }
 
-aside a:nth-child(2) {
+aside a:nth-child(2){
   bottom: 30vh;
   background-color: black;
 }
 
-aside a:nth-child(3) {
+aside a:nth-child(3){
   bottom: 22vh;
   background-color: rgb(255, 255, 255);
 }
 
-.material-icons.md-30 {
+.material-icons.md-30 { 
   display: block;
-  font-size: 4vh;
+  font-size: 4vh; 
 }
 
-.icon1 {
+.icon1{
   margin-left: 1.7vh;
   margin-top: 1.7vh;
 }
 
-.scroll {
+/*------------------------------ 
+---------- SCROLL --------------
+----------------------------- */
+
+.scroll{
   grid-area: 1 / 2 / 2 / 3;
   margin-left: auto;
   margin-right: auto;
@@ -123,7 +75,7 @@ aside a:nth-child(3) {
   border-radius: 50px;
 }
 
-.scroll_child {
+.scroll_child{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -133,120 +85,124 @@ aside a:nth-child(3) {
   animation: bounce 0.8s ease infinite;
 }
 
-.footer_accueil {
-  position: absolute;
+/*------------------------------ 
+---------- FOOTER --------------
+----------------------------- */
+
+.footer_accueil{
+  position :absolute;
   bottom: 0;
   width: 100%;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4, 25%);
   text-align: center;
 }
 
-.footer_accueil a:nth-child(1) {
+.footer_accueil a:nth-child(1){
   grid-column: 1;
 }
 
-.footer_accueil a {
-  font-family: "MaPolice-black";
+.footer_accueil a{
   border: 1px solid rgb(255, 255, 255);
   text-decoration: none;
   font-size: 3vw;
   padding-bottom: 0.6vh;
 }
 
-.material-icons.md-34 {
+.material-icons.md-34 { 
   display: block;
-  font-size: 5vh;
+  font-size: 5vh; 
 }
 
-.icon2 {
+.icon2{
   margin: 0.5vh auto;
 }
 
-.selection {
+.selection{
   background-color: white;
   color: #D6859E;
 }
 
-/* ---------------------------------------------------------
---------------           KEY FRAMES          ---------------
-----------------------------------------------------------*/
 
-@keyframes bounce {
-  from {
-    transform: translateY(0);
-  }
-
-  to {
-    transform: translateY(-2vh);
-  }
-}
-
-/* ---------------------------------------------------------
+/* -----------------------------------------------------------
 --------------           CALENDRIER           --------------
 ----------------------------------------------------------*/
 
 .calendar {
-  width: auto;
+  height: 112vW;
   display: grid;
-  place-items: center;
-  grid-template-columns: repeat(7, 1fr);
-  grid-auto-rows: max-content;
-  grid-auto-flow: row;
+  grid-template-columns: repeat(7, 14vw);
+  grid-template-rows: repeat(8, 14vw);
   color: black;
   background-color: #7DB7A3;
-  padding: 15px;
+  margin: 1vw;
+  border-radius: 1vh;
 }
 
 .cell {
-  width: 1em;
-  height: 1em;
-  padding: 1em;
   text-align: center;
+  font-size: 2vh;
+  line-height: 14vw;
 }
 
-.cell:hover {
+.numbers:hover {
   color: white;
   background-color: #D6859E;
-  border-radius: 100px;
-  border: 1px solid black;
-}
-.today {
-  color: white;
-  background-color: blue;
-  border-radius: 100px;
-  border: 1px solid black;
-}
-.cell:empty {
-  width: 0;
-  padding: 0;
+  border-radius: 50%;
 }
 
-.jours {
-  color: black;
-
+.calendar :nth-child(4){
+  grid-area: 2 / 1 / 3 / 2;
 }
+
+.calendar :nth-child(5){
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.calendar :nth-child(6){
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.calendar :nth-child(7){
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.calendar :nth-child(8){
+  grid-area: 2 / 5 / 3 / 6;
+}
+
+.calendar :nth-child(9){
+  grid-area: 2 / 6 / 3 / 7;
+}
+
+.calendar :nth-child(10){
+  grid-area: 2 / 7 / 3 / 8;
+}
+
 
 .date-text {
-  padding: 1em;
-  width: 150px;
-  grid-column: 3/ 6;
+  grid-area: 1 / 3 / 2 / 6 ;
   text-align: center;
-  text-transform: uppercase;
   color: white;
   background-color: #d6859e;
   border-radius: 10px;
+  font-size: 2vh;
   font-weight: bold;
+  padding: 1vh 1vh;
+  margin: auto;
+  text-transform: uppercase;
 }
 
 .prev {
-  grid-row: 1 / 2;
-  display: flex;
+  grid-area : 1 / 1 / 2 / 3;
+  margin: auto;
+  font-size: 3vh;
 }
 
 .next {
-  grid-column: 7 / 8;
-  display: flex;
+  grid-area : 1 / 6 / 2 / 8;
+  margin: auto;
+  font-size: 3vh;
 }
 
 .next,
@@ -254,39 +210,80 @@ aside a:nth-child(3) {
   cursor: pointer;
 }
 
-/* utilisation de vh et vw pour les différentes tailles agenda, calendrier, polices... */
 
-#monagenda {
-  background-color: rgb(125, 183, 163);
-  margin: 40px 20px;
-  border: 0.5px solid black;
-  height: 50vh;
-  border-radius: 7px;
-  display: grid;
-  justify-content: space-evenly;
+.today{
+color: rgb(0, 0, 0);
+background-color: #fffefe;
+border-radius: 50%;
 }
 
-h1 {
-  font-family: "MaPolice-black";
-  font-size: 24pt;
-  text-align: center;
-  margin-top: 16px;
+/* -----------------------------------------------------------
+--------------           MON AGENDA           --------------
+----------------------------------------------------------*/
+
+#monagenda {
+background-color: rgb(125, 183, 163);
+margin: 40px 20px;
+border: 0.5px solid black;
+height: 50vh;
+border-radius: 7px;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 8vh 12vh 12vh 12vh;
+}
+
+#monagenda h1 {
+font-family: "MaPolice-black";
+font-size: 4vh;
+text-align: center;
+margin-top: 16px;
 }
 
 .cours {
-  width: 210px;
-  height: 70px;
-  border-radius: 10px;
-  background-color: white;
-  border: 0.5px solid black;
-  border-left: 20px solid green;
+height: auto;
+border-radius: 10px;
+background-color: white;
+border: 0.5px solid black;
+border-left: 20px solid green;
+margin: 1vh auto;
 }
 
-.h2 {
-  font-family: "MaPolice-black";
+.cours h2 {
+font-family: "MaPolice-black";
+margin : 1vh 0vh 0vh 1vh;
+font-size : 3vh
 }
 
 .p {
-  position: absolute;
-  bottom: 0;
+position: absolute;
+bottom: 0;
+}
+
+.daHe{
+display: grid;
+grid-template-columns: 13vh 5vh 7.5vh;
+grid-template-rows: 5vh;
+margin: 0vh 1vh;
+font-size: 2vh;
+}
+
+.horaire{
+grid-area: 1 / 3;
+}
+
+.daHe i, .horaire, .daHe p{
+margin: auto 0;
+}
+
+.daHe i, .horaire {
+text-align: center;
+}
+
+/* ---------------------------------------------------------
+--------------           KEY FRAMES          ---------------
+----------------------------------------------------------*/
+
+@keyframes bounce{
+  from {transform: translateY(0);}
+   to  {transform: translateY(-2vh);}
 }
