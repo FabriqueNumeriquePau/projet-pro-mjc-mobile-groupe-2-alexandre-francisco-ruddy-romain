@@ -1,50 +1,64 @@
 /* ---------------------------------------------------------
 --------------           ACCUEIL          ------------------
 ----------------------------------------------------------*/
-*{
+* {
     padding: 0;
     margin: 0%;
     box-sizing: border-box;
 }
-.backh {
+.header {
     width: 100%;
     height: 100vh;
     background-image: url(/images/img4.jpg);
     background-size: cover;
 }
-
+.download {
+    height: 12vh;
+    width: 30vw;
+    background-color: green;
+    border-radius: 0px 5px 5px 0px;
+    position: absolute;
+    bottom: 30vh;
+    padding: 3px;
+    padding-left: 5px;
+}
+.pdf {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    text-decoration: none;
+    color: honeydew;
+    font-size: 3vw;
+    margin: auto;
+    line-height: normal;
+}
 aside a {
     position: fixed;
-    right: 0; 
+    right: 0;
     border-radius: 50% 0 0 50%;
     width: 7vh;
     height: 7vh;
 }
-
-aside a img{
+aside a img {
     width: 50%;
     display: block;
-    margin : auto;
+    margin: auto;
     margin-top: 25%;
 }
-
-aside a:nth-child(1){
+aside a:nth-child(1) {
     bottom: 38vh;
     background-color: rgb(255, 255, 255);
 }
-
-aside a:nth-child(2){
+aside a:nth-child(2) {
     bottom: 30vh;
     background-color: black;
 }
-
-aside a:nth-child(3){
+aside a:nth-child(3) {
     bottom: 22vh;
     background-color: rgb(255, 255, 255);
 }
-
-footer{
-    position :absolute;
+footer {
+    position: absolute;
     bottom: 0;
     width: 100%;
     display: grid;
@@ -52,149 +66,278 @@ footer{
     grid-template-rows: 9vh;
     text-align: center;
 }
-
-footer a:nth-child(1){
+footer a:nth-child(1) {
     grid-column: 1;
 }
-
-footer a{
+footer a {
     font-family: "MaPolice-black";
     border: 1px solid rgb(255, 255, 255);
     text-decoration: none;
     font-size: 60%;
 }
-
-footer a img{
+footer a img {
     width: 40%;
     display: block;
-    margin : auto;
+    margin: auto;
     margin-top: 5%;
     padding-bottom: 5%;
 }
-
-/* ------------------CARRUSEL----------------------- */
+/* ------------------evenement du moi----------------------- */
 h2 {
     padding: 10px;
     padding-bottom: 2px;
     text-align: center;
     margin-top: 15px;
+    font-size: 5vw;
 }
+
 .h2 {
     margin-top: 0;
     margin-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
-
 }
-    
-
-.carrusel {
+/* -----------------carousel con glider ----------------------------- */
+.carousel {
+    width: 100%;
+    height: 30vh;
+    margin: auto;
+    padding: 8px;
+    font-size: 3vw;
+}
+.carousel__contenedor {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    position: relative;
+    margin-left: 5px;
+}
+.carousel__elementos {
     background-color: #7DB7A3;
     display: flex;
-    width: 95%;
-    height: 210px;
+    width: 100%;
+    height: 100%;
     margin-top: 10px;
     margin: auto;
-
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.carousel__lista,
+.glider,
+.draggable {
+    padding: 0;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.glider-track,
+.carousel__elementos,
+.glider-slide,
+.center,
+.visible {
+    width: 100%;
+    height: 30vh;
+    padding: 0;
+    margin: 0;
+}
+.carousel__anterior,
+.carousel__siguiente {
+    position: absolute;
+    width: 10%;
+    height: 4vh;
+    margin-top: 4px;
+    border: 1px solid gray;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    color: #D6859E;
+    font-size: 3vw;
+}
+.carousel__anterior {
+    left: 1%;
+    top: 100%;
+}
+.carousel__siguiente {
+    left: 88%;
+    top: 100%;
 }
 .foto {
-    width: 37%;
-    height: 190px;
+    width: 40%;
+    height: 95%;
+    margin: auto;
+    margin-left: 7px;
+}
+.foto1 {
     background-image: url(/Francisco/infos/EVENEMENTSMOIS.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 5px;
-    margin: 10px;
+}
+.foto2 {
+    background-image: url(/Francisco/infos/job.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foto3 {
+    background-image: url(/Francisco/infos/padres.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .texto {
     width: 60%;
-    height: 180px;
-    font-size: 15px;
-    margin-top: 5px;
+    height: 100%;
+    font-size: 3.5vw;
+    padding: 1vw;
 }
 .texto p {
-    padding-top: 5px;
-    margin-bottom: 25px;
+    padding-top: 2%;
+    margin-bottom: 4%;
 }
+
+/* -------------------- categories et menu--------------------------- */
 
 #buscador {
     width: 100%;
-    height: 40px;
+    height: 7vw;
     display: flex;
-    margin-top: 30px;
+    margin-top: 7vh;
 }
+
 .categorias {
     width: 32%;
-    height: 40px;
+    height: 7vw;
+    padding: 5px;
     background-color: #DF8B19;
     border-radius: 5px;
     margin: auto;
     border: 1px solid rgba(172, 169, 169, 0.705);
     display: flex;
+    font-size: 3vw;
 }
 
 .categorias p {
-    top: 50%;
     margin: auto;
     color: rgba(114, 112, 112, 0.877);
+    padding: 5px;
+    padding-top: 1%;
 }
-.categorias a {
-    background-color: darkgreen;
-    width: 10%;
-    margin: auto;
-    color: rgba(114, 112, 112, 0.877);
-}
+
 .menu {
     width: 100%;
     height: 200px;
-    display: none;
 }
+
+#menu-bar {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.flecha {
+    color: gray;
+    margin: auto;
+    font-size: 4vw;
+}
+
+label {
+    float: right;
+    font-size: 4vw;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+
+.menu {
+    position: absolute;
+    width: 33%;
+    margin-top: 3vh;
+    transition: all 0.7s;
+    transform: translateX(-100%);
+    border-radius: 5px;
+    opacity: 0;
+    border: 1px solid rgba(255, 255, 255, 0.575);
+}
+
+.menu li {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.466);
+    background-color: #df8d19e7;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.menu li:hover {
+    background: #d6859fee;
+}
+
+#menu-bar:checked~.menu {
+    transform: translateX(-5%);
+    opacity: 1;
+}
+
+/* ----------------bar rechercher----------------- */
+
 .buscar {
     width: 64%;
-    height: 40px;
+    height: 7vw;
     background-color: #DF8B19;
     border-radius: 5px;
     margin: auto;
     border: 1px solid rgba(172, 169, 169, 0.705);
     display: flex;
+    padding: 5px;
+    font-size: 3vw;
 }
 .buscar p {
     top: 50%;
     margin: auto;
     color: rgba(114, 112, 112, 0.877);
+    width: 45%;
 }
+.lupa {
+    color: gray;
+    width: 10%;
+    height: 4vw;
+    padding: 5px;
+}
+
+/* --------------------tous les articles-------------------- */
 
 .tous {
     text-align: center;
     margin-top: 30px;
     font-size: 17px;
     margin-bottom: 5px;
+    font-size: 4vw;
 }
 .h3 {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5vw;
 }
 .contenedor {
     width: 100%;
-    height: 200px;
-    margin-top: 30px;
+    height: 20%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .cuadros {
     display: flex;
-    width: 80px;
-    height: 80px;
+    width: 24vw;
+    height: 7vh;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    font-size: 4vw;
 }
 .fecha {
     background-color: #DF8B19;
-    height: 50px;
-    width: 80px;
+    height: 7vh;
+    width: 24vw;
     border-radius: 5px;
     border: 1px solid rgba(172, 169, 169, 0.705);
     display: flex;
@@ -205,41 +348,46 @@ h2 {
     margin-right: auto;
 }
 .dia {
-    height: 20px;
+    height: 3vh;
     width: 90%;
     justify-content: center;
     text-align: center;
     margin-top: 5px;
 }
 .mes {
-    height: 20px;
+    height: 4vw;
     width: 50%;
     text-align: center;
 }
 .ano {
-    height: 20px;
+    height: 4vw;
     width: 50%;
-} 
+}
 .comentario {
     width: 45%;
-    height: 25px;
-    background-color:#DF8B19;
-    border-radius: 5px; 
-    border: 1px solid rgba(172, 169, 169, 0.705);
-    text-align: center;
-}
-.favorito {
-    width: 45%;
-    height: 25px;
-    background-color:#DF8B19;
+    height: 4vh;
+    background-color: #DF8B19;
     border-radius: 5px;
     border: 1px solid rgba(172, 169, 169, 0.705);
     text-align: center;
+    margin-top: 1%;
 }
-
+.favorito {
+    width: 45%;
+    height: 4vh;
+    background-color: #DF8B19;
+    border-radius: 5px;
+    border: 1px solid rgba(172, 169, 169, 0.705);
+    text-align: center;
+    margin-top: 1%;
+}
+.iconos {
+    margin: auto;
+    margin-top: 4px;
+}
 .job {
     width: 75%;
-    height: 80px;
+    height: 11vh;
     background-image: url(/Francisco/infos/job.png);
     background-size: cover;
     border-radius: 5px;
@@ -249,7 +397,7 @@ h2 {
 }
 .parents {
     width: 75%;
-    height: 80px;
+    height: 11vh;
     background-image: url(/Francisco/infos/padres.png);
     background-size: cover;
     border-radius: 5px;
@@ -259,7 +407,7 @@ h2 {
 }
 .sport {
     width: 75%;
-    height: 80px;
+    height: 11vh;
     background-image: url(/Francisco/infos/sport.png);
     background-size: cover;
     border-radius: 5px;
@@ -270,11 +418,10 @@ h2 {
 .informacion {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5px;
-    padding-right: 5px;
     display: block;
+    font-size: 4vw;
+    padding: 1vw;
 }
-
 .informacion p {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -285,45 +432,56 @@ h2 {
 }
 .lineas {
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
 }
+/* --------------------boton voir plus------------------- */
 .boton {
     width: 100%;
-    height: 50px;
-    align-items: center;
+    height: 6vw;
+    padding: 5px;
     display: flex;
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
 }
 .boton a {
-    width: 200px;
-    height: 40px;
+    width: 40%;
+    height: 6vw;
     background-color: #D6859E;
     border: 1px solid rgba(224, 89, 179, 0.705);
     border-radius: 5px;
-    margin: auto;
     color: black;
     text-decoration: none;
     text-align: center;
-    padding-top: 10px;
+    font-size: 5vw;
+    margin: auto;
 }
-
+/* -------------------footer-------------------- */
 .footer {
     width: 100%;
-    height: 30px;
+    height: 4vw;
     background-color: #DF8B19;
     align-items: center;
     display: flex;
+    font-size: 3vw;
+    margin-top: 8vw;
 }
-.footer p{
+.footer p {
     color: blanchedalmond;
     font-size: 12px;
     text-align: center;
     margin: auto;
 }
-
 .boton a:hover {
-    background-color: rgba(167, 161, 161, 0.753);
+    background-color: rgba(128, 128, 128, 0.74);
+}
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-2vh);
+    }
 }
