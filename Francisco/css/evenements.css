@@ -1,17 +1,12 @@
 /* ---------------------------------------------------------
---------------           ACCUEIL          ------------------
+--------------           ACCUEIL ---dowload         ------------------
 ----------------------------------------------------------*/
 * {
     padding: 0;
     margin: 0%;
     box-sizing: border-box;
 }
-.header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(/images/img4.jpg);
-    background-size: cover;
-}
+
 .download {
     height: 12vh;
     width: 30vw;
@@ -32,56 +27,7 @@
     margin: auto;
     line-height: normal;
 }
-aside a {
-    position: fixed;
-    right: 0;
-    border-radius: 50% 0 0 50%;
-    width: 7vh;
-    height: 7vh;
-}
-aside a img {
-    width: 50%;
-    display: block;
-    margin: auto;
-    margin-top: 25%;
-}
-aside a:nth-child(1) {
-    bottom: 38vh;
-    background-color: rgb(255, 255, 255);
-}
-aside a:nth-child(2) {
-    bottom: 30vh;
-    background-color: black;
-}
-aside a:nth-child(3) {
-    bottom: 22vh;
-    background-color: rgb(255, 255, 255);
-}
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 9vh;
-    text-align: center;
-}
-footer a:nth-child(1) {
-    grid-column: 1;
-}
-footer a {
-    font-family: "MaPolice-black";
-    border: 1px solid rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 60%;
-}
-footer a img {
-    width: 40%;
-    display: block;
-    margin: auto;
-    margin-top: 5%;
-    padding-bottom: 5%;
-}
+
 /* ------------------evenement du moi----------------------- */
 h2 {
     padding: 10px;
@@ -213,38 +159,32 @@ h2 {
     display: flex;
     font-size: 3vw;
 }
-
 .categorias p {
     margin: auto;
     color: rgba(114, 112, 112, 0.877);
     padding: 5px;
     padding-top: 1%;
 }
-
 .menu {
     width: 100%;
     height: 200px;
 }
-
 #menu-bar {
     display: none;
     width: 100%;
     height: 100%;
 }
-
 .flecha {
     color: gray;
     margin: auto;
     font-size: 4vw;
 }
-
 label {
     float: right;
     font-size: 4vw;
     cursor: pointer;
     margin-bottom: 10%;
 }
-
 .menu {
     position: absolute;
     width: 33%;
@@ -255,7 +195,6 @@ label {
     opacity: 0;
     border: 1px solid rgba(255, 255, 255, 0.575);
 }
-
 .menu li {
     display: block;
     color: rgb(0, 0, 0);
@@ -267,11 +206,9 @@ label {
     cursor: pointer;
     margin: auto;
 }
-
 .menu li:hover {
     background: #d6859fee;
 }
-
 #menu-bar:checked~.menu {
     transform: translateX(-5%);
     opacity: 1;
