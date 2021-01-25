@@ -10,7 +10,7 @@
 }
 
 header{
-    background-image: url(/images/Accueil1.png);
+    background-image: url(../images/Accueil1.png);
     background-size: cover;
     height: 100vh;
     display: grid;

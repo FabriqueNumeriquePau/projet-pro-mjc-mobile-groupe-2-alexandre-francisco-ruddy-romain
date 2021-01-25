@@ -42,7 +42,7 @@
 .imagenjob {
     width: 46%;
     height: 60vw;
-    background-image: url(/Francisco/infos/image005.png);
+    background-image: url(../images/image005.png);
     background-size: cover;
     margin: auto;
     border: 1px solid rgba(183, 86, 192, 0.705);
@@ -139,7 +139,7 @@ h3 {
 .img1 {
     height: 20vw;
     width: 100%;
-    background-image: url(/Francisco/infos/padres.png);
+    background-image: url(../images/padres.png);
     background-size: cover;
     border-radius: 5px;
     border: 1px solid rgba(183, 86, 192, 0.705);
@@ -163,7 +163,7 @@ h3 {
 .img2 {
     height: 20vw;
     width: 100%;
-    background-image: url(/Francisco/infos/sport.png);
+    background-image: url(../images/sport.png);
     background-size: cover;
     border-radius: 5px;
     border: 1px solid rgba(86, 192, 118, 0.705);

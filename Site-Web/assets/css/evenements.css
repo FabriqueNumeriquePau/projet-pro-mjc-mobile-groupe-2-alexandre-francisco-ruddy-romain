@@ -114,17 +114,17 @@ h2 {
     margin-left: 7px;
 }
 .foto1 {
-    background-image: url(/Francisco/infos/EVENEMENTSMOIS.png);
+    background-image: url(../images/EVENEMENTSMOIS.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .foto2 {
-    background-image: url(/Francisco/infos/job.png);
+    background-image: url(../images/job.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .foto3 {
-    background-image: url(/Francisco/infos/padres.png);
+    background-image: url(../images/padres.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -325,7 +325,7 @@ label {
 .job {
     width: 75%;
     height: 11vh;
-    background-image: url(/Francisco/infos/job.png);
+    background-image: url(../images/job.png);
     background-size: cover;
     border-radius: 5px;
     border: 1px solid rgba(169, 170, 172, 0.705);
@@ -335,7 +335,7 @@ label {
 .parents {
     width: 75%;
     height: 11vh;
-    background-image: url(/Francisco/infos/padres.png);
+    background-image: url(../images/padres.png);
     background-size: cover;
     border-radius: 5px;
     border: 1px solid rgba(169, 170, 172, 0.705);
@@ -345,7 +345,7 @@ label {
 .sport {
     width: 75%;
     height: 11vh;
-    background-image: url(/Francisco/infos/sport.png);
+    background-image: url(../images/sport.png);
     background-size: cover;
     border-radius: 5px;
     border: 1px solid rgba(169, 170, 172, 0.705);
@@ -412,13 +412,4 @@ label {
 }
 .boton a:hover {
     background-color: rgba(128, 128, 128, 0.74);
-}
-@keyframes bounce {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(-2vh);
-    }
 }
