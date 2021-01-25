@@ -193,7 +193,6 @@ horaire.className = "horaire";
 let clock = document.createElement("i");
 clock.className = "material-icons";
 
-/* icone horloge a rajouter */
 
 matiere.textContent = "YOGA"; // intitulé du cours ex: Yoga
 journee.textContent = "Lorem Ipsum"; // date du cours
