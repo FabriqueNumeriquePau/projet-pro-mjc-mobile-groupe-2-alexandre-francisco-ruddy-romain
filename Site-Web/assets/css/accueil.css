@@ -3,12 +3,6 @@
 --------------           HEADER           ------------------
 ----------------------------------------------------------*/
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "MaPolice-regular";
-}
-
 header{
     background-image: url(../images/Accueil1.png);
     background-size: cover;
@@ -21,10 +15,6 @@ header{
 ----------- ASIDE --------------
 ----------------------------- */
 
-/* aside{
-    display: none;
-} */
-
 aside a {
     position: fixed;
     right: 0; 
@@ -35,9 +25,12 @@ aside a {
     text-decoration: none;
 }
 
+aside a:nth-child(1), aside a:nth-child(3){
+    background-color: rgb(255, 255, 255);
+}
+
 aside a:nth-child(1){
     bottom: 38vh;
-    background-color: rgb(255, 255, 255);
 }
 
 aside a:nth-child(2){
@@ -47,7 +40,6 @@ aside a:nth-child(2){
 
 aside a:nth-child(3){
     bottom: 22vh;
-    background-color: rgb(255, 255, 255);
 }
 
 .material-icons.md-30 { 
@@ -56,8 +48,7 @@ aside a:nth-child(3){
 }
 
 .icon1{
-    margin-left: 1.7vh;
-    margin-top: 1.7vh;
+    margin : 1.7vh 0vh 0vh 1.7vh;
 }
 
 /*------------------------------ 
@@ -66,9 +57,7 @@ aside a:nth-child(3){
 
 .scroll{
     grid-area: 1 / 2 / 2 / 3;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 75vh;
+    margin : 75vh auto 0vh auto;
     border: solid 2px rgb(255, 255, 255);
     height: 8vh;
     border-radius: 50px;

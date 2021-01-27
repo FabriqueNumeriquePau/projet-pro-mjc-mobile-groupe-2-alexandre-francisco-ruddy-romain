@@ -59,7 +59,7 @@
     src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
 }
 
-body{
+*{
     margin:0;
     padding:0;
 }

@@ -1,23 +1,6 @@
-@font-face{
-    font-family: "MaPolice-black";
-    src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Light.ttf) format('truetype');
-}
-@font-face{
-    font-family: "MaPolice-italic";
-    src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
-}
-@font-face{
-    font-family: "MaPolice-regular";
-    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
-}
 
 body{
     font-family: "MaPolice-regular";
-}
-
-*{
-    margin: 0;
-    padding: 0;
 }
 
 /* ---------------------------------------------------------
@@ -31,15 +14,17 @@ header{
     grid-template-rows: 18vh 32vh;
 }
 
+.logo, .image_activites, header p{
+    margin:auto;
+}
+
 .logo{
     grid-area: 1 / 1 / 2 / 3;
-    margin:auto;
     height: 10vh;
 }
 
 .image_activites{
     height: 17vh;
-    margin: auto;
 }
 
 header h1, header p{
@@ -52,18 +37,17 @@ header h1 {
 }
 
 header p{
-    font-size: 1.7vh;
     text-align: justify;
+    font-size: 1.7vh;
     padding: 10%;
-    margin: Auto;
 }
 
 #close{
-    color: white;
     position: absolute;
-    font-size: 3vh;
     top:0;
     right: 0;
+    color: white;
+    font-size: 3vh;
 }
 
 /* ---------------------------------------------------------
@@ -77,8 +61,11 @@ main{
     grid-template-rows: 30vh 30vh 30vh;
 }
 
-article{
+article, .photos, main h1, .description{
     margin : auto;
+}
+
+article{
     height: 25vh;
     width: 19vh;
     display: grid;
@@ -90,7 +77,6 @@ article{
     grid-area: 1 / 1 / 2 / 2;
     height: 12vh;
     width: 18vh;
-    margin: auto;
 }
 
 main h1 {
@@ -98,25 +84,22 @@ main h1 {
     text-align: center;
     font-size: 2vh;
     padding: 2% 10%;
-    margin : auto;
 }
 
 .description{
     grid-area: 3 / 1 / 4 / 2;
-    font-size: 1.7vh;
     text-align: justify;
+    font-size: 1.7vh;
     padding: 0% 10%;
-    margin : auto;
 }
 
 .informations{
     grid-area: 4 / 1 / 5 / 2;
-    font-size: 1vh;
     text-align: right;
+    font-size: 1vh;
     margin: auto 0%;
     padding: 0% 22%;
     text-decoration: none;
-    
 }
 
 .informations i {

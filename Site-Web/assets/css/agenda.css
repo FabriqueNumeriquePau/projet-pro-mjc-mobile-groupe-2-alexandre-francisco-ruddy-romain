@@ -1,71 +1,14 @@
-/* Couleur de fond */
-
-.bgColorLightPink{
-  background-color: #D6859E;
-}
-
-.bgColorDarkPink{
-  background-color: #C93364;
-}
-.bgColorLightGreen{
-  background-color: #7DB7A3;
-}
-.bgColorDarkGreen{
-  background-color: #3C963E;
-}
-.bgColorBrown{
-  background-color: #672C2A;
-}
-.bgColorYellow{
-  background-color: #DF8B19;
-}
-.bgColorBlue{
-  background-color: #3696A1;
-}
-
-/* Couleur de police */
-
-.colorPoliceBlack {    
-  color : black;
-}
-
-.colorPoliceWhite{
-  color : white;
-}
-
-.colorPolicePink {
-  color : #C93364;
-}
-
-.colorPoliceLightPink {
-  color : #D6859E;
-}
-
-@font-face{
-  font-family: "MaPolice-black";
-  src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Light.ttf) format('truetype');
-}
-@font-face{
-  font-family: "MaPolice-italic";
-  src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
-}
-
 .boxShadow {
   box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25) ;
 }
 
-body{
-  font-family: "MaPolice-black";
-}
-
 *{
-  margin: 0;
-  padding: 0;
+  font-family: "MaPolice-regular";
 }
 
 /* -----------------------------------------------------------
---------------           CALENDRIER           --------------
-----------------------------------------------------------*/
+--------------           CALENDRIER           ----------------
+------------------------------------------------------------*/
 
 .calendar {
   height: 112vW;
@@ -77,6 +20,8 @@ body{
   margin: 1vw;
   border-radius: 1vh;
 }
+
+/* --- cellules contenant les jours (lun->Dim) + (1 -> 31) ---- */
 
 .cell {
   text-align: center;
@@ -90,34 +35,7 @@ body{
   border-radius: 50%;
 }
 
-.calendar :nth-child(4){
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.calendar :nth-child(5){
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.calendar :nth-child(6){
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-.calendar :nth-child(7){
-  grid-area: 2 / 4 / 3 / 5;
-}
-
-.calendar :nth-child(8){
-  grid-area: 2 / 5 / 3 / 6;
-}
-
-.calendar :nth-child(9){
-  grid-area: 2 / 6 / 3 / 7;
-}
-
-.calendar :nth-child(10){
-  grid-area: 2 / 7 / 3 / 8;
-}
-
+/* ------ Mois -----*/
 
 .date-text {
   grid-area: 1 / 3 / 2 / 6 ;
@@ -129,26 +47,26 @@ body{
   font-weight: bold;
   padding: 1vh 1vh;
   margin: auto;
-  text-transform: uppercase;
+  text-transform: uppercase; /* Permet d'avoir l'ecriture en majuscule */
+}
+
+/* ------ Flèches précedent/suivant -----*/
+
+.prev, .next{
+  margin: auto;
+  font-size: 3vh;
+  cursor: pointer;
 }
 
 .prev {
   grid-area : 1 / 1 / 2 / 3;
-  margin: auto;
-  font-size: 3vh;
 }
 
 .next {
   grid-area : 1 / 6 / 2 / 8;
-  margin: auto;
-  font-size: 3vh;
 }
 
-.next,
-.prev {
-  cursor: pointer;
-}
-
+/* ---- Le jour actuel ----*/
 
 .today{
 color: rgb(0, 0, 0);
@@ -157,72 +75,62 @@ border-radius: 50%;
 }
 
 /* -----------------------------------------------------------
---------------           MON AGENDA           --------------
-----------------------------------------------------------*/
+--------------           MON AGENDA           ----------------
+------------------------------------------------------------*/
 
 #monagenda {
-background-color: rgb(125, 183, 163);
-margin: 40px 20px;
-border: 0.5px solid black;
-height: 50vh;
-border-radius: 7px;
-display: grid;
-grid-template-columns: auto;
-grid-template-rows: 8vh 12vh 12vh 12vh;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 8vh 12vh 12vh 12vh;
+  background-color: rgb(125, 183, 163);
+  margin: 40px 20px;
+  border: 0.5px solid black;
+  border-radius: 7px;
 }
 
 #monagenda h1 {
-font-family: "MaPolice-black";
-font-size: 4vh;
-text-align: center;
-margin-top: 16px;
+  font-family: "MaPolice-black";
+  font-size: 4vh;
+  text-align: center;
+  margin-top: 16px;
 }
 
+/* --- Nom du cours ---- */
+
 .cours {
-height: auto;
-border-radius: 10px;
-background-color: white;
-border: 0.5px solid black;
-border-left: 20px solid green;
-margin: 1vh auto;
+  height: auto;
+  border-radius: 10px;
+  background-color: white;
+  border: 0.5px solid black;
+  border-left: 20px solid green;
+  margin: 1vh auto;
 }
 
 .cours h2 {
-font-family: "MaPolice-black";
-margin : 1vh 0vh 0vh 1vh;
-font-size : 3vh
+  font-family: "MaPolice-black";
+  margin : 1vh 0vh 0vh 1vh;
+  font-size : 3vh
 }
 
-.p {
-position: absolute;
-bottom: 0;
-}
+/* --- Description du cours avec heure ---- */
 
 .daHe{
-display: grid;
-grid-template-columns: 13vh 5vh 7.5vh;
-grid-template-rows: 5vh;
-margin: 0vh 1vh;
-font-size: 2vh;
+  display: grid;
+  grid-template-columns: 13vh 5vh 7.5vh;
+  grid-template-rows: 5vh;
+  margin: 0vh 1vh;
+  font-size: 2vh;
 }
 
 .horaire{
-grid-area: 1 / 3;
+  grid-area: 1 / 3;
 }
 
 .daHe i, .horaire, .daHe p{
-margin: auto 0;
+  margin: auto 0;
 }
 
 .daHe i, .horaire {
-text-align: center;
-}
-
-/* ---------------------------------------------------------
---------------           KEY FRAMES          ---------------
-----------------------------------------------------------*/
-
-@keyframes bounce{
-  from {transform: translateY(0);}
-   to  {transform: translateY(-2vh);}
+  text-align: center;
 }

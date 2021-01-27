@@ -1,11 +1,4 @@
-
-/* ---------------------------------------------------------
---------------           HEADER           ------------------
-----------------------------------------------------------*/
-
 *{
-    margin: 0;
-    padding: 0;
     font-family: "MaPolice-regular";
 }
 
@@ -21,13 +14,15 @@
     padding: 2vh;
 }
 
-.h1_activites{
-    font-size: 3vh;
+.h1_activites, .h2_activites, .div_activites{
     text-align: center;
 }
 
+.h1_activites{
+    font-size: 3vh;
+}
+
 .h2_activites{
-    text-align: center;
     font-size: 2vh;
 }
 
@@ -42,7 +37,6 @@
     margin : 2vh auto;
     border: 1px solid white;
     background-color: white;
-    text-align: center;
     border-radius: 15%;
 }
 
@@ -67,13 +61,5 @@ footer p {
     font-size: 1.2vh;
 }
 
-/* ---------------------------------------------------------
---------------           KEY FRAMES          ---------------
-----------------------------------------------------------*/
-
-@keyframes bounce{
-    from {transform: translateY(0);}
-     to  {transform: translateY(-2vh);}
-}
 
 
