@@ -7,9 +7,13 @@
     src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
 }
 
+@font-face{
+    font-family: "MaPolice-regular";
+    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
+}
 
 body{
-    font-family: "MaPolice-black";
+    font-family: "MaPolice-regular";
     width: 100vw;
     height: 100vh;
     display: grid;

@@ -4,19 +4,17 @@
 * {
     padding: 0;
     margin: 0%;
-    box-sizing: border-box;
 }
 
 .download {
-    height: 12vh;
     width: 30vw;
     background-color: green;
     border-radius: 0px 5px 5px 0px;
     position: absolute;
     bottom: 30vh;
-    padding: 3px;
-    padding-left: 5px;
+    padding: 0.5vh;
 }
+
 .pdf {
     height: 100%;
     width: 100%;
@@ -50,6 +48,7 @@ h2 {
     margin: auto;
     padding: 8px;
     font-size: 3vw;
+    box-sizing: border-box;
 }
 .carousel__contenedor {
     width: 100%;
@@ -146,6 +145,7 @@ h2 {
     height: 7vw;
     display: flex;
     margin-top: 7vh;
+    box-sizing: border-box;
 }
 
 .categorias {
@@ -241,6 +241,10 @@ label {
 }
 
 /* --------------------tous les articles-------------------- */
+
+#articles{
+    box-sizing: border-box;
+}
 
 .tous {
     text-align: center;
@@ -381,6 +385,7 @@ label {
     display: flex;
     margin-top: 3vw;
     margin-bottom: 4vw;
+    box-sizing: border-box;
 }
 .boton a {
     width: 40%;
@@ -403,6 +408,7 @@ label {
     display: flex;
     font-size: 3vw;
     margin-top: 8vw;
+    box-sizing: border-box;
 }
 .footer p {
     color: blanchedalmond;

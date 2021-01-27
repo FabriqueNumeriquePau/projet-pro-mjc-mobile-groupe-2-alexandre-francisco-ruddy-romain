@@ -6,10 +6,13 @@
     font-family: "MaPolice-italic";
     src:url(/assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
 }
-
+@font-face{
+    font-family: "MaPolice-regular";
+    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
+}
 
 body{
-    font-family: "MaPolice-black";
+    font-family: "MaPolice-regular";
 }
 
 *{
@@ -24,14 +27,13 @@ body{
 header{
     height: 50vh;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 40% 60%;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 18vh 32vh;
 }
 
 .logo{
     grid-area: 1 / 1 / 2 / 3;
     margin:auto;
-    width: 20vh;
     height: 10vh;
 }
 

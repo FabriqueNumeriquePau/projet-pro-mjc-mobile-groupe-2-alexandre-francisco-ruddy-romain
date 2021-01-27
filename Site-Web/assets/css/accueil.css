@@ -71,17 +71,12 @@ aside a:nth-child(3){
     margin-top: 75vh;
     border: solid 2px rgb(255, 255, 255);
     height: 8vh;
-    width: 3.5vh;
     border-radius: 50px;
 }
 
 .scroll_child{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 3vh;
     width: 3.5vh;
-    height: 3.5vh;
     animation: bounce 0.8s ease infinite;
 }
 
