@@ -34,7 +34,6 @@ function getMonthText() {
   else return selectedMonthName + " ";
 }
 function getYearText() {
-  //    if (selectedYear === currYear) //
   return " " + selectedYear;
 }
 // afin de pourvoir coordonnée nos date avec nos jours
@@ -165,16 +164,7 @@ function goToNextMonth() {
 
   renderDOM(selectedYear, selectedMonth);
 }
-// fonction affichant le mois en cours
-function goToCurrDate() {
-  selectedYear = currYear;
-  selectedMonth = currMonth;
 
-  selectedMonthDays = getDayCount(selectedYear, selectedMonth);
-  selectedMonthName = getMonthName(selectedYear, selectedMonth);
-
-  renderDOM(selectedYear, selectedMonth);
-}
 
 /* ---------------------------------------------------------
 --------------           AGENDA         --------------------
