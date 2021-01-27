@@ -4,23 +4,31 @@ main{
 }
 /*----------image profil----------*/
 img{
-    width:15%;
+    width: 20vh;
     border-radius: 50%;
     position: relative;
     margin: auto;
 }
 /*__________________________________________________*/
 /*----------component----------*/
+
+h1{
+    font-size: 3vh;
+}
+
 article{
     display: flex;
     justify-content: space-between;
     position: relative;
 }
+
+h4{
+    font-size: 2vh;
+}
 /*__________________________________________________*/
 /*----------Ligne----------*/
 main>p{
-    margin-left:auto;
-    margin-right:auto;
+    margin : 0 auto;
     padding:0;
     width: 50%;
     border: 1px solid rgba(141, 141, 141, 0.5);
@@ -29,11 +37,16 @@ main>p{
 article>p{
     margin-left:  5%;
     margin-right:  5%;
+    color: gray;
+    font-size: 1.8vh;
+    font-style: italic;
 }
+
 article>i{
     margin-left:  5%;
     margin-right:  5%;
 }
+
 .edit{
     position: absolute;
     width:100%;
@@ -43,18 +56,20 @@ article>i{
     justify-content: space-between;
     display: none;
 }
+
 .edit>input{
     border:none;
     color:black;
 }
+
 .edit>.textEdit{
     width: 100%;
     text-align: center;
 }
+
 .edit>.okEditButton{
     margin:5%;
 }
-
 
 ::placeholder{
     color:black;
@@ -63,3 +78,4 @@ article>i{
 .add{
     display: block;
 }
+
