@@ -165,16 +165,6 @@ function goToNextMonth() {
 
   renderDOM(selectedYear, selectedMonth);
 }
-// fonction affichant le mois en cours
-function goToCurrDate() {
-  selectedYear = currYear;
-  selectedMonth = currMonth;
-
-  selectedMonthDays = getDayCount(selectedYear, selectedMonth);
-  selectedMonthName = getMonthName(selectedYear, selectedMonth);
-
-  renderDOM(selectedYear, selectedMonth);
-}
 
 /* ---------------------------------------------------------
 --------------           AGENDA         --------------------
