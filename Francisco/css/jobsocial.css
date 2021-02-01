@@ -91,6 +91,13 @@
     text-align: center;
     margin: auto;
 }
+.fb_contenedor {
+    width: 97%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin: auto;
+}
+
 
 .sociales {
     width: 95%;

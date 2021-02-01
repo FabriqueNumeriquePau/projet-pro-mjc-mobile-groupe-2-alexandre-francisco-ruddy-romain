@@ -5,7 +5,6 @@
     padding: 0;
     margin: 0%;
 }
-
 .download {
     width: 30vw;
     background-color: green;
@@ -14,7 +13,6 @@
     bottom: 30vh;
     padding: 0.5vh;
 }
-
 .pdf {
     height: 100%;
     width: 100%;
@@ -25,7 +23,6 @@
     margin: auto;
     line-height: normal;
 }
-
 /* ------------------evenement du moi----------------------- */
 h2 {
     padding: 10px;
@@ -34,7 +31,6 @@ h2 {
     margin-top: 15px;
     font-size: 5vw;
 }
-
 .h2 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -45,9 +41,8 @@ h2 {
 .carousel {
     width: 100%;
     height: 30vh;
-    margin: auto;
     padding: 8px;
-    font-size: 3vw;
+    font-size: 3.5vw;
     box-sizing: border-box;
 }
 .carousel__contenedor {
@@ -55,7 +50,9 @@ h2 {
     height: 30vh;
     display: flex;
     position: relative;
-    margin-left: 5px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: #7DB7A3;
 }
 .carousel__elementos {
     background-color: #7DB7A3;
@@ -63,17 +60,13 @@ h2 {
     width: 100%;
     height: 100%;
     margin-top: 10px;
-    margin: auto;
     margin-bottom: 5px;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 .carousel__lista,
 .glider,
 .draggable {
-    padding: 0;
     width: 100%;
-    margin-right: 10px;
-    margin-left: 5px;
 }
 .glider-track,
 .carousel__elementos,
@@ -99,33 +92,29 @@ h2 {
     font-size: 3vw;
 }
 .carousel__anterior {
-    left: 1%;
+    left: 0%;
     top: 100%;
 }
 .carousel__siguiente {
-    left: 88%;
+    left: 90%;
     top: 100%;
 }
 .foto {
     width: 40%;
     height: 95%;
-    margin: auto;
-    margin-left: 7px;
+    margin: 1.5vw;
 }
 .foto1 {
     background-image: url(../images/EVENEMENTSMOIS.png);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 .foto2 {
     background-image: url(../images/job.png);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 .foto3 {
     background-image: url(../images/padres.png);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 .texto {
     width: 60%;
@@ -137,17 +126,15 @@ h2 {
     padding-top: 2%;
     margin-bottom: 4%;
 }
-
 /* -------------------- categories et menu--------------------------- */
-
 #buscador {
-    width: 100%;
+    width: 98vw;
     height: 7vw;
     display: flex;
-    margin-top: 7vh;
+    margin-top: 13vw;
     box-sizing: border-box;
+    margin-left: 1vw;
 }
-
 .categorias {
     width: 32%;
     height: 7vw;
@@ -157,27 +144,23 @@ h2 {
     margin: auto;
     border: 1px solid rgba(172, 169, 169, 0.705);
     display: flex;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 .categorias p {
     margin: auto;
     color: rgba(114, 112, 112, 0.877);
-    padding: 5px;
     padding-top: 1%;
 }
 .menu {
     width: 100%;
-    height: 200px;
+    height: 10vw;
 }
 #menu-bar {
     display: none;
-    width: 100%;
-    height: 100%;
 }
 .flecha {
     color: gray;
     margin: auto;
-    font-size: 4vw;
 }
 label {
     float: right;
@@ -187,35 +170,31 @@ label {
 }
 .menu {
     position: absolute;
-    width: 33%;
-    margin-top: 3vh;
+    width: 33.6%;
+    margin-top: 7.5vw;
     transition: all 0.7s;
     transform: translateX(-100%);
     border-radius: 5px;
     opacity: 0;
-    border: 1px solid rgba(255, 255, 255, 0.575);
+    border: 1px solid rgba(255, 255, 255, 0.644);
 }
 .menu li {
-    display: block;
-    color: rgb(0, 0, 0);
     text-decoration: none;
-    padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.466);
-    background-color: #df8d19e7;
+    padding: 2vw; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.644);
+    background-color: #df8d19ee;
     border-radius: 5px;
     cursor: pointer;
-    margin: auto;
 }
 .menu li:hover {
     background: #d6859fee;
 }
 #menu-bar:checked~.menu {
-    transform: translateX(-5%);
+    transform: translateX(-7%);
     opacity: 1;
+    margin-left: .6vw;
 }
-
 /* ----------------bar rechercher----------------- */
-
 .buscar {
     width: 64%;
     height: 7vw;
@@ -225,27 +204,28 @@ label {
     border: 1px solid rgba(172, 169, 169, 0.705);
     display: flex;
     padding: 5px;
-    font-size: 3vw;
+    font-size: 4vw;
 }
-.buscar p {
+.rechercher {
     top: 50%;
     margin: auto;
-    color: rgba(114, 112, 112, 0.877);
-    width: 45%;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    background-color: #DF8B19;
+    border: none;
+    font-size: 3.5vw;
+    cursor: text;
 }
 .lupa {
     color: gray;
-    width: 10%;
-    height: 4vw;
-    padding: 5px;
+    width: 8%;
+    margin: auto;
 }
-
 /* --------------------tous les articles-------------------- */
-
 #articles{
     box-sizing: border-box;
 }
-
 .tous {
     text-align: center;
     margin-top: 30px;
@@ -256,24 +236,25 @@ label {
 .h3 {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5vw;
+    margin-bottom: 7vw;
 }
 .contenedor {
-    width: 100%;
-    height: 20%;
+    width: 98vw;
+    height: 38vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: auto;
 }
 .cuadros {
     display: flex;
-    width: 24vw;
-    height: 7vh;
+    width: 25%;
+    height: 13vh;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 4vw;
+    margin: auto;
+    font-size: 4.5vw;
+    box-sizing: border-box;
 }
 .fecha {
     background-color: #DF8B19;
@@ -285,15 +266,13 @@ label {
     justify-content: space-between;
     flex-wrap: wrap;
     border: 1px solid rgba(172, 169, 169, 0.705);
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding: 1vw;
 }
 .dia {
-    height: 3vh;
+    height: 4vh;
     width: 90%;
-    justify-content: center;
     text-align: center;
-    margin-top: 5px;
 }
 .mes {
     height: 4vw;
@@ -301,81 +280,67 @@ label {
     text-align: center;
 }
 .ano {
-    height: 4vw;
+    height: 3.5vw;
     width: 50%;
 }
 .comentario {
-    width: 45%;
-    height: 4vh;
+    width: 48%;
+    height: 4.2vh;
     background-color: #DF8B19;
     border-radius: 5px;
     border: 1px solid rgba(172, 169, 169, 0.705);
     text-align: center;
     margin-top: 1%;
+    box-sizing: border-box;
 }
 .favorito {
-    width: 45%;
-    height: 4vh;
+    width: 48%;
+    height: 4.2vh;
     background-color: #DF8B19;
     border-radius: 5px;
     border: 1px solid rgba(172, 169, 169, 0.705);
     text-align: center;
     margin-top: 1%;
+    box-sizing: border-box;
 }
 .iconos {
+  padding: 8%;
+}
+.fotos {
+    width: 71%;
+    height: 13vh;
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid rgba(169, 170, 172, 0.705);
     margin: auto;
-    margin-top: 4px;
 }
 .job {
-    width: 75%;
-    height: 11vh;
     background-image: url(../images/job.png);
     background-size: cover;
-    border-radius: 5px;
-    border: 1px solid rgba(169, 170, 172, 0.705);
-    margin-left: auto;
-    margin-right: auto;
 }
 .parents {
-    width: 75%;
-    height: 11vh;
     background-image: url(../images/padres.png);
     background-size: cover;
-    border-radius: 5px;
-    border: 1px solid rgba(169, 170, 172, 0.705);
-    margin-left: auto;
-    margin-right: auto;
 }
 .sport {
-    width: 75%;
-    height: 11vh;
     background-image: url(../images/sport.png);
     background-size: cover;
-    border-radius: 5px;
-    border: 1px solid rgba(169, 170, 172, 0.705);
-    margin-left: auto;
-    margin-right: auto;
 }
 .informacion {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    width: 98%;
+    height: 20vh;
     font-size: 4vw;
-    padding: 1vw;
+    margin: auto;
 }
 .informacion p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+ line-height: 1.5;
 }
 .links {
-    padding-bottom: 10px;
     margin-left: 85%;
 }
 .lineas {
-    margin-top: 5px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 /* --------------------boton voir plus------------------- */
 .boton {
@@ -419,3 +384,37 @@ label {
 .boton a:hover {
     background-color: rgba(128, 128, 128, 0.74);
 }
+@media screen and (min-width: 760px) {
+    * {
+        font-size: 4vw;
+    }
+    .contenedor {
+        height: 45vh;
+    }
+    .carousel {
+        height: 40vh;
+    }
+    .carousel__contenedor {
+        height: 40vh;
+    }
+    .carousel__elementos {
+        height: 40vh;
+    }
+    .glider-track,
+    .carousel__elementos,
+    .glider-slide,
+    .center,
+    .visible {
+        height: 40vh;
+    }
+    .menu {
+        width: 32.5%;
+    }
+    #menu-bar:checked~.menu {
+        transform: translateX(-7%);
+        margin-left: 1.5%;
+    }
+    .footer p {
+        font-size: 2.5vw;
+    }
+ }
