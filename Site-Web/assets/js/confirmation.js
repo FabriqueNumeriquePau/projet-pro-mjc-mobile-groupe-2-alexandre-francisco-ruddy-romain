@@ -1,3 +1,3 @@
-//    setTimeout(function(){
-//     window.location.href = "../accueil.html";
-//  }, 10000);
+   setTimeout(function(){
+    window.location.href = "../accueil.html";
+ }, 5000);

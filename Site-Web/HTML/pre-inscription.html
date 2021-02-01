@@ -13,19 +13,20 @@
 <section>
     <div></div>
     <div>
-       <input type="text" id="username" placeholder="Nom d'utilisateur">
+       <input type="text" id="username" placeholder="Nom d'utilisateur" required>
     </div>
     <div>
-        <input type="text" id="username" placeholder="adresse e-mail">
+        <input type="text" id="mail" placeholder="adresse e-mail" required>
      </div>
      <div>
-        <input type="text" id="username" placeholder="Mot de passe">
+        <input type="text" id="password" placeholder="Mot de passe" required>
      </div>
     <div>
-        <input type="text" id="username" placeholder="Confirmer mot de passe">
+        <input type="text" id="cpassword" placeholder="Confirmer mot de passe" required>
     </div>
-    <button class="inscrire">S'inscrire</button>
+    <button type="button" onclick="valider()" class="inscrire">S'inscrire</button>
 </section>
-<a href="../accueil.html"><i id="close" class="material-icons">close</i></a>
+<a href="javascript:history.back()"><i id="close" class="material-icons">close</i></a>
+<script src="../assets/js/pre-inscription.js"></script>
 </body>
 </html>

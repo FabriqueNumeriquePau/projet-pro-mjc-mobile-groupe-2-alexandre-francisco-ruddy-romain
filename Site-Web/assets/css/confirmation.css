@@ -1,32 +1,37 @@
-@font-face{
-    font-family: "MaPolice-black";
-    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-Black.ttf) format('truetype');
-}
-@font-face{
-    font-family: "MaPolice-italic";
-    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
-}
-
-@font-face{
-    font-family: "MaPolice-regular";
-    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
-}
-
 body {
     background-color: #d6859e;
-    display: grid;
 }
-.logoMJC {
-    height: 10vh;
+
+.image {
+    display: flex;
+    padding: 3vh;
+}
+
+img {
+    height: 15vh;
+    margin: auto;
 }
 
 p {
     font-family: "MaPolice-regular";
     font-size: 4vh;
     text-align: center;
+    margin: 4vh;
 }
+.lien {
+    margin: 4vh auto;
+    width: 100vw;
+    display: flex;
+}
+
 .retour {
+    width: 10vh;
+    text-align: center;
     background-color: black;
     color: white;
     border: 1px solid white;
+    margin: 0 auto;
+    padding: 2vh;
+    font-size: 3vh;
+    text-decoration: none;
 }

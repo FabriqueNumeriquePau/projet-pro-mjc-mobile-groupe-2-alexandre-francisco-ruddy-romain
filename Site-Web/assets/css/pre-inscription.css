@@ -21,6 +21,7 @@ h1{
     /* text-decoration: underline; */
     border-bottom: 1px solid black;
     padding-bottom: 2vh;
+    font-size: 5vh;
 }
 
 section{
@@ -39,12 +40,13 @@ section div{
 }
 
 
-#username{
+#username, #password, #mail, #cpassword{
     height: 5vh;
     width: 50vw;
     text-align: center;
     font-family: "MaPolice-regular";
     border: 3px solid #C93364 ;
+    font-size: 2vh;
 }
 
 button{
@@ -54,6 +56,7 @@ button{
     border-radius: 10vh;
     font-family: "MaPolice-regular";
     font-size: 2.5vh;
+    background-color: black;
 }
 
 .inscrire{
@@ -61,4 +64,15 @@ button{
     background-color: black;
     border: 1px solid black;
     color: white;
+    text-decoration: none;
+}
+
+input:focus:valid {
+  border-color: #b3f3a2;
+  box-shadow: 0 0 1px #b3f3a2;
+}
+
+input:focus:invalid {
+  border-color: #f79c9c;
+  box-shadow: 0 0 1px #f79c9c;
 }
