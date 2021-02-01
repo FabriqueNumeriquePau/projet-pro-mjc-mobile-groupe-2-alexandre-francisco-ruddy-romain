@@ -1,0 +1,32 @@
+@font-face{
+    font-family: "MaPolice-black";
+    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-Black.ttf) format('truetype');
+}
+@font-face{
+    font-family: "MaPolice-italic";
+    src:url(../webfonts/Lato2OFLWeb/Lato/fonts/Lato-BlackItalic.ttf);
+}
+
+@font-face{
+    font-family: "MaPolice-regular";
+    src:url(../../../assets/webfonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff) format('truetype');
+}
+
+body {
+    background-color: #d6859e;
+    display: grid;
+}
+.logoMJC {
+    height: 10vh;
+}
+
+p {
+    font-family: "MaPolice-regular";
+    font-size: 4vh;
+    text-align: center;
+}
+.retour {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
