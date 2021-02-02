@@ -66,13 +66,3 @@ button{
     color: white;
     text-decoration: none;
 }
-
-input:focus:valid {
-  border-color: #b3f3a2;
-  box-shadow: 0 0 1px #b3f3a2;
-}
-
-input:focus:invalid {
-  border-color: #f79c9c;
-  box-shadow: 0 0 1px #f79c9c;
-}
