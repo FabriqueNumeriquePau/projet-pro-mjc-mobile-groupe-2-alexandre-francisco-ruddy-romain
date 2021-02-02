@@ -23,6 +23,10 @@ h1{
     font-size: 5vh;
 }
 
+/* ----------------------------------------------------------------------
+----                           CARRÉ BLANC                           ----
+-----------------------------------------------------------------------*/
+
 section{
     grid-area: 2 / 1 / 3 / 2;
     display: grid;
@@ -39,6 +43,10 @@ section div{
 
 }
 
+/* ----------------------------------------------
+----            Nom d'utilisateur            ----
+-----------------------------------------------*/
+
 #username {
     height: 5vh;
     width: 24vh;
@@ -46,6 +54,14 @@ section div{
     font-family: "MaPolice-regular";
     border: 3px solid #C93364 ;
     font-size: 2vh;
+}
+
+/* ----------------------------------------------
+----              Mot de Passe               ----
+-----------------------------------------------*/
+.mdp{
+    border: 3px solid #C93364 ;
+    display: flex;
 }
 
 #password{
@@ -58,32 +74,20 @@ section div{
     font-size: 2vh;
 }
 
-.mdp{
-    border: 3px solid #C93364 ;
-    display: flex;
-}
-
 #eye{
     border: none;
     background-color: white;
     margin-right: 0.5vh;
 }
 
+/* Class affectée avec du JS */
 .imgEye{
     width: 3vh;
 }
 
-/* #eye:focus{
-    outline: none;
-} */
-
-.eye{
-    width: 3.5vh;
-    background-color: white;
-    margin: auto;
-    vertical-align: middle;
-}
-
+/* ----------------------------------------------
+----         Connexion / S'inscrire          ----
+-----------------------------------------------*/
 
 .connexion, .inscription{
     margin: auto;
@@ -97,8 +101,12 @@ section div{
 .connexion {
     grid-area: 4 / 1 / 5 / 2;
     background-color: black;
-    color: white;
     border: 1px solid white;
+}
+
+.Aconnexion{
+    color: white;
+    text-decoration: none;
 }
 
 .inscription{
@@ -107,11 +115,15 @@ section div{
     border: 1px solid black;
 }
 
-#password:focus, #username:focus, #eye:focus, .inscription:focus, .connexion:focus{
-    outline: none;
-}
-
-a{
+.Ainscription{
     text-decoration: none;
     color: black
+}
+
+/* ----------------------------------------------
+----                 CSS Commun              ----
+-----------------------------------------------*/
+
+#password:focus, #username:focus, #eye:focus, .inscription:focus, .connexion:focus{
+    outline: none;
 }
