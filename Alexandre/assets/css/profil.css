@@ -1,0 +1,65 @@
+main{
+    overflow: scroll;
+
+}
+/*----------image profil----------*/
+img{
+    width:15%;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+/*__________________________________________________*/
+/*----------component----------*/
+article{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+/*__________________________________________________*/
+/*----------Ligne----------*/
+main>p{
+    margin-left:auto;
+    margin-right:auto;
+    padding:0;
+    width: 50%;
+    border: 1px solid rgba(141, 141, 141, 0.5);
+}
+/*__________________________________________________*/
+article>p{
+    margin-left:  5%;
+    margin-right:  5%;
+}
+article>i{
+    margin-left:  5%;
+    margin-right:  5%;
+}
+.edit{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.edit>input{
+    border:none;
+    color:black;
+}
+.edit>.textEdit{
+    width: 100%;
+    text-align: center;
+}
+.edit>.okEditButton{
+    margin:5%;
+}
+
+
+::placeholder{
+    color:black;
+}
+
+.add{
+    display: block;
+}
